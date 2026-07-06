@@ -1,0 +1,7 @@
+{
+  "WIZARD-INSCRIBE.description": "[gold]Etch[/gold] 2 cards{IfUpgraded:show:| at random}.",
+  "WIZARD-INSCRIBE.title": "Inscribe",
+
+  "WIZARD-RECITE.description": "[gold]Cast[/gold] {Cards:diff()} {Cards:plural:card|cards}.",
+  "WIZARD-RECITE.title": "Recite"
+}

@@ -1,0 +1,10 @@
+{
+  "WIZARD-COMPLEX.title": "Complex",
+  "WIZARD-COMPLEX.description": "Cannot be [gold]Etched[/gold] into your spell pile.",
+
+  "WIZARD-ETCH.title": "Etch",
+  "WIZARD-ETCH.description": "Shuffle a card into your spell pile.",
+  
+  "WIZARD-CAST.title": "Cast",
+  "WIZARD-CAST.description": "Play the top card in your spell pile."
+}

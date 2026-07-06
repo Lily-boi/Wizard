@@ -1,0 +1,16 @@
+{
+  "WIZARD-WIZARD.aromaPrinciple": "Lore",
+  "WIZARD-WIZARD.banter.alive.endTurnPing": "Co-op hurry up end turn ping message",
+  "WIZARD-WIZARD.banter.dead.endTurnPing": "...",
+  "WIZARD-WIZARD.cardsModifierDescription": "__ cards will now appear in rewards and shops.",
+  "WIZARD-WIZARD.cardsModifierTitle": "__ Cards",
+  "WIZARD-WIZARD.description": "Character Selection\nScreen Description",
+  "WIZARD-WIZARD.eventDeathPrevention": "Co-op survival line",
+  "WIZARD-WIZARD.goldMonologue": "Line spoken when obtaining a large amount of gold",
+  "WIZARD-WIZARD.possessiveAdjective": "his/her/its",
+  "WIZARD-WIZARD.pronounObject": "him/her/it",
+  "WIZARD-WIZARD.pronounPossessive": "his/hers/its",
+  "WIZARD-WIZARD.pronounSubject": "he/she/it",
+  "WIZARD-WIZARD.title": "The Wizard",
+  "WIZARD-WIZARD.titleObject": "The Wizard"
+}
