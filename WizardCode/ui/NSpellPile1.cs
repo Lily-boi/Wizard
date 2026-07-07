@@ -27,7 +27,7 @@ public partial class NSpellPile1 : NCombatCardPile
     {
         var spellPileButton = ResourceLoader.Load<PackedScene>(_scenePath).Instantiate<NSpellPile1>();
         spellPileButton.Name = "SpellPile";
-        spellPileButton.Position = SpellCardPile.ButtonPosition - new Vector2(15, 15); // adjust so it doesn't overlap Exhaust/Cargo
+        spellPileButton.Position = SpellCardPile.ButtonPosition;
 
         var background = spellPileButton.GetNode<TextureRect>("CountContainer/Background");
         background.Texture = ResourceLoader.Load<Texture2D>("res://images/packed/combat_ui/pile_button_count.png");
@@ -45,7 +45,6 @@ public partial class NSpellPile1 : NCombatCardPile
     {
         ConnectSignals();
         _emptyPileMessage = new LocString("combat_messages", "OPEN_EMPTY_SPELL_PILE");
-        Visible = true; // TEMP: force visible regardless of card count
         SetAnimInOutPositions();
         Disable();
     }
@@ -53,7 +52,7 @@ public partial class NSpellPile1 : NCombatCardPile
     protected override void SetAnimInOutPositions()
     {
         _showPosition = Position;
-        _hidePosition = Position; //+ new Vector2(HideOffsetX, 0f);
+        _hidePosition = Position; 
     }
 
     public override void Initialize(Player player)
@@ -65,8 +64,6 @@ public partial class NSpellPile1 : NCombatCardPile
 
         _currentCount = _pile.Cards.Count;
         _countLabel.SetTextAutoSize(_currentCount.ToString());
-
-        //if (_pile.Cards.Count <= 0) return;
         Visible = true;
         Enable();
     }
@@ -75,7 +72,6 @@ public partial class NSpellPile1 : NCombatCardPile
     {
         _currentCount = _pile?.Cards.Count ?? 0;
         _countLabel.SetTextAutoSize(_currentCount.ToString());
-
         
         if (_currentCount > 0 && !Visible)
         {
@@ -87,14 +83,14 @@ public partial class NSpellPile1 : NCombatCardPile
     protected override void OnFocus()
     {
         NHoverTipSet.Remove(this);
-        var hoverTip = new HoverTip(
-            new LocString("static_hover_tips", "SPELL_PILE.title"),
-            new LocString("static_hover_tips", "SPELL_PILE.description"));
+        var title = new LocString("static_hover_tips", "SPELL_PILE.title");
+        title.Add("Hotkey", "None");
+        var hoverTip = new HoverTip(title, new LocString("static_hover_tips", "SPELL_PILE.description"));
         var tooltip = NHoverTipSet.CreateAndShow(this, hoverTip);
-
-        _bumpTween?.Kill();
-        _bumpTween = CreateTween();
-        _bumpTween.TweenProperty(_icon, "scale", new Vector2(1.25f, 1.25f), 0.05);
+        if (tooltip != null)
+        {
+            tooltip.GlobalPosition = GlobalPosition + new Vector2(20f, -220f);
+        }
     }
 
     protected override void OnUnfocus()

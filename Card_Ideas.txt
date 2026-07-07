@@ -1,0 +1,31 @@
+﻿Starting Relic
+ - Apprentices Book
+   - At the start of combat, Etch 1 card in your hand.
+ - Mages Book
+   - At the start of combat, Etch 1 card in your deck.
+   
+Starting Cards
+ - Inscribe         {1}     Skill  Common
+   - Etch 2 cards [at random | ]
+ - Recite           {0}    Attack  Common
+   - Cast the 1[2] card[s]
+   
+CARDS
+
+COMMON  20
+ - Attacks  9
+   - Book Strike   {2}
+     - Deal 8 damage. Deals 3[4] additional damage for each card in your Spell pile.
+    
+   - Multitask     {2}
+     - Deal 8[10] damage. Etch a card [at random | ].
+     
+   - Intimidate    {1[0]}
+     - Deal 3 damage to ALL enemies. All enemies gain 1 weak and 1 vulnerable.
+     
+   - Magic Missile {1}
+     - Deal 4[6] damage to a random enemy 3 times. Repeat an additional 2 times if this card was cast.
+     
+   
+ 
+ - Skills   11

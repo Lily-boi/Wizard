@@ -1,3 +1,4 @@
 {
-  
+  "SPELL_PILE.description": "Click to view the cards in your spell pile (shuffled).",
+  "SPELL_PILE.title": "Spell Pile{Hotkey:choose(None):| ({})}"
 }

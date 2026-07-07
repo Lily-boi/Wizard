@@ -48,15 +48,21 @@ public static class EtchCmd
 
     // "Etch a card in your hand" (player choice) — filter Complex OUT of the selectable pool
     // entirely, rather than letting them pick one and fizzle. Better UX.
-    public static async Task<CardModel?> EtchChosenFromHand(
-        PlayerChoiceContext choiceContext, Player owner, CardModel source, int max)
+    public static async Task<IReadOnlyList<CardModel>> EtchChosenFromHand(
+        PlayerChoiceContext choiceContext, Player owner, AbstractModel source, int max)
     {
+        CardSelectorPrefs prefs = new CardSelectorPrefs(EtchSelectorPrefs.ChosenFromHandPrompt, minCount: 0, maxCount: max);
         
-        CardSelectorPrefs prefs = new CardSelectorPrefs(source.SelectionScreenPrompt, minCount: 0, maxCount: max);
-        
-        foreach (CardModel card in await CardSelectCmd.FromHand(choiceContext, owner, prefs, null, (AbstractModel) source))
-            await CardCmd.Exhaust(choiceContext, card);
+        var chosen = await CardSelectCmd.FromHand(choiceContext, owner, prefs,
+            c => c is not IComplexCard, source);
 
-        return null;
+        var etched = new List<CardModel>();
+        foreach (CardModel card in chosen)
+        {
+            if (await EtchCmd.Etch(card))
+                etched.Add(card);
+        }
+
+        return etched;
     }
 }

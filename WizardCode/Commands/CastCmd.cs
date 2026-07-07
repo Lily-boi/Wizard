@@ -17,7 +17,7 @@ public static class CastCmd
         if (card == null || player.Creature.IsDead) return null;
 
         await CardPileCmd.Add(card, PileType.Play);
-        card.ExhaustOnNextPlay = forceExhaust; // false = normal post-play routing = Discard
+        card.ExhaustOnNextPlay = forceExhaust;
         await CardCmd.AutoPlay(choiceContext, card, null);
         return card;
     }
