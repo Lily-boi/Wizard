@@ -1,10 +1,11 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="Script" path="res://WizardCode/ui/NSpellPile.cs" id="1"]
-[ext_resource type="Script" path="res://Wizard/images/combat_ui/Spell_Pile_Placeholder.png" id="2"]
+[ext_resource type="Script" path="res://WizardCode/ui/NSpellPile1.cs" id="1"]
+[ext_resource type="Script" path="res://Wizard/images/relics/mages_book.png" id="2"]
 [ext_resource type="Script" path="res://WizardCode/ui/WizardMegaLabel.cs" id="3"]
 
 [node name="SpellPile" type="Control"]
+unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 0
 offset_right = 80.0

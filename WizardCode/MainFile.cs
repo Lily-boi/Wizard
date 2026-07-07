@@ -1,4 +1,6 @@
+using System.Reflection;
 using Godot;
+using Godot.Bridge;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
 
@@ -15,8 +17,7 @@ public partial class MainFile : Node
 
     public static void Initialize()
     {
-        //If you want to use scripts defined in your mod for Godot scenes, uncomment the following line.
-        //Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(Assembly.GetExecutingAssembly());
+        Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(Assembly.GetExecutingAssembly());
 
         Harmony harmony = new(ModId);
 

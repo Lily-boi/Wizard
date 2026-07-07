@@ -7,6 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
 using Wizard.WizardCode.Cards;
+using Wizard.WizardCode.Relics;
 
 namespace Wizard.WizardCode.Character;
 
@@ -33,7 +34,7 @@ public class Wizard : PlaceholderCharacterModel
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<BurningBlood>()
+        ModelDb.Relic<MagesBook>()
     ];
 
     public override CardPoolModel CardPool => ModelDb.CardPool<WizardCardPool>();
