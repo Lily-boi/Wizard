@@ -18,6 +18,15 @@ public sealed class Inscribe : WizardCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await EtchCmd.EtchRandomFromHand(Owner, 2);
+        Inscribe source = this;
+
+        if (source.IsUpgraded)
+        {
+            await EtchCmd.EtchChosenFromHand(choiceContext, this._owner, this, 2);
+        }
+        else
+        {
+            await EtchCmd.EtchRandomFromHand(Owner, 2);
+        }
     }
 }
