@@ -3,29 +3,207 @@
    - At the start of combat, Etch 1 card in your hand.
  - Mages Book
    - At the start of combat, Etch 1 card in your deck.
-   
+   GAMBLING CHIP
 Starting Cards
  - Inscribe         {1}     Skill  Common
    - Etch 2 cards [at random | ]
  - Recite           {0}    Attack  Common
-   - Cast the 1[2] card[s]
+   - Cast 1[2] card[s]
+   
+   
+   Core Mechanics to this character (archetypes)
+    - Filling the Spell Pile with lots of cards (chain lightning, book strike, etc)
+    - Putting in a couple big spells and casting them for free
+    - Statuses in spell pile?
    
 CARDS
 
 COMMON  20
- - Attacks  9
-   - Book Strike   {2}
+ - Attacks  11
+   - Book Strike     {2}
      - Deal 8 damage. Deals 3[4] additional damage for each card in your Spell pile.
     
-   - Multitask     {2}
+   - Multitask       {2}
      - Deal 8[10] damage. Etch a card [at random | ].
      
-   - Intimidate    {1[0]}
-     - Deal 3 damage to ALL enemies. All enemies gain 1 weak and 1 vulnerable.
-     
-   - Magic Missile {1}
+   - Magic Missile   {1}
      - Deal 4[6] damage to a random enemy 3 times. Repeat an additional 2 times if this card was cast.
      
+   - Maelstrom Pulse {2}
+     - Deal 5[8] damage to ALL enemies. Etch this card.
+     
+   - Icicle          {1}
+     - Deal 3[5] damage. Gain 3[5] block. Repeat an additional time if this card was cast.
+
+   - Fire bolt       {1}
+     - Deal 10[12] damage. Deals 5[7] additional damage if this card was cast.
+     
+   - Acid Splash     {1}
+     - Deal 6 damage to a random enemy 2[3] times.
+
+   - Mudslide        {1}
+     - Deal 6[8] damage. Apply 1 weak.
+     
+   - Chain Lightning {0}
+     - Deal 1 damage and Etch a copy of this card. Repeat for each Chain Lightning card in your Spell pile. Exhaust.
+     
+   - Dual Cast       {1}
+     - Deal 6[8] damage. Cast 1 card.
+     
+   - Wild Cast       {1}
+     - Deal 15[18] damage. Etch 2 Fizzles.  
+     
+   - Undertow         {2}
+     - Gain 8[10] block. Draw 2[3] cards the beginning of your next turn.
    
- 
- - Skills   11
+ - Skills   9
+    - Mage Armor      {2}
+      - Gain 12[14] block. Etch a barrier card. 
+      
+    - Gust            {1}
+      - Gain 4[6] block. Apply 1 weak. If this card was cast, apply 2 weak instead.
+      
+    - Concentrate     {1}
+      - Gain 8[10] block. Etch 1 card.
+     
+    - Buy time        {1}
+      - Gain 10[14] block. Etch 2 Fizzles.
+
+    - Faerie Light    {0}
+      - Apply 1 weak and 1[2] vulnerable.
+      
+    - Mass Chant      {2}
+      - Cast 3[4] cards.
+    
+    - Ebb and Flow    {1}
+      - Draw 2 cards. If this was cast, gain {2}[3] instead.
+      
+    -
+      -
+      
+    - Reuse           {1}
+      - Cast 1[2] card[s]. Etch 1 card from your Discard pile.
+      
+UNCOMMON  36
+ - Attacks  14
+    - Fireball        {4}
+      - Deal 48[58] damage to a random enemy.
+      
+    - COMBO             {1}
+      - Deal 9[11] damage. Deals 4[5] additional damage for each card cast this turn.
+     
+   - Necrotic touch  {1}
+     - Deal 12[15] damage. Take 3 damage.
+      
+    - Riptide        {2}
+      - Deal 8[10] damage to ALL enemies. Gain 2[4] vigor.
+      
+    - Pyroclasm      {3}
+      - Deal 12[15] damage to ALL enemies. Etch this card.
+      
+    - Burning Grip   {2}
+      - Deal 10 damage to a random enemy 2[3] times.
+      
+    - Tremor         {2}
+      - Deal 9[12] damage to ALL enemies. Apply 1 weak to ALL enemies.
+      
+    -
+      -
+      
+    - Blood Rune     {1}
+      - Deal 12[15] damage. Lose 2 hp. Etch this card.
+      
+    - Momentum       {0}
+      - Deal 5[8] damage to a random enemy equal to the amount of times you've Cast a card this turn.
+      
+    - Sleet storm    {1}
+      - Deal 5[7] damage to a random enemy 3 times.
+      
+    - Spell Spray    {1}
+      - Deal 3[4] damage to a random enemy. Draw 1 card. Draw an additional card if this was Cast.
+      
+    - Spark Missile  {1}
+      - Deal 10[13] damage. Etch a Fizzle if this card wasn't Cast.
+      
+    - Scorch         {3}
+      - Deal 12[15] damage. Reduce this cost by 1 for each card Cast this turn.
+      
+ - Skills   13
+    - Desperate Measures {0}
+      - Cast 2[3] cards. Take 8 damage. Exhaust.
+      
+    - Overload        {0}
+      - Gain 2[3] mana. Etch 2 Fizzles.
+      
+    - Spare page      {1}
+      - Draw 1 card. Etch 1[2] card[s].
+      
+    - Divination/Foresight  {1}
+      - Look at the top 3[5] cards of your Draw pile. Etch 1 of them.
+      
+    - Petrify        {3}
+      - Target enemy loses 5[8] strength. Apply 2 Weak and 2[3] Vulnerable to that enemy.
+      
+    - Earthen Wall   {2}
+      - Gain 7[9] Block. If this card was Cast, gain an additional 5[7] block.
+      
+    - Tidewater      {1}
+      - Gain {2}[{3}] next turn. If this was cast, gain it this turn instead.
+      
+    - Cleansing wave {1}
+      - Gain 6[8] block. Exhaust a card in your Draw pile.
+      
+    - Withering Curse {1}
+      - Apply 2 Weak on yourself and an Enemy. 
+      
+    - 
+      - 
+      
+    - 
+      - 
+      
+    - 
+      - 
+      
+    - 
+      - 
+      
+
+ - Powers   9   x3 filling spell pile. x3 
+    - Efficient Casting  {2[1]}
+      - Cast 1 card at the end of each turn.
+         
+    - Archmages Hat      {1}
+      - Reduce the cost of a random card in your hand by 1[2] at the beginning of each turn.
+      
+    - Preparation        {1}
+      - Gain 5[7] block. Whenever you play a Power, gain 5[7] block.
+      
+    - Magical Residue    {1}
+      - Whenever you Etch a card, deal 3[5] damage to ALL enemies. (Draw a card?)
+      
+    - ???           
+      - Whenever you Cast a card, do something (block? damage? vulnerable?)
+      
+    -   ???
+      - Whenever you Cast a card that costs {2} or more, gain {1}.
+      
+    - Cheat Sheet        {2[1]}
+      - The first time you Etch a card each turn, Etch a copy with Exhaust
+      
+    - Invoke: Icicle     {2}
+      - At the beginning of your turn, Etch 1 Icicle[+].
+      
+    - Invoke: Firebolt   {2}
+      - At the beginning of your turn, Etch 1 Firebolt[+].
+      
+
+RARE      26
+
+    - Ice Wall        {0}
+      - If this card was cast, gain 1 buffer.
+      
+      Fireworks     {10}
+       Deal 50 damage. Costs {1} less for each fizzle played. Complex.
+    - Archmages Possession {3}
+      - Cast every card in your Spell pile.
