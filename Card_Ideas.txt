@@ -42,7 +42,7 @@ COMMON  20
      - Deal 6 damage to a random enemy 2[3] times.
 
    - Mudslide        {1}
-     - Deal 6[8] damage. Apply 1 weak.
+     - Deal 6[8] damage. Apply 1 Vulnerable.
      
    - Chain Lightning {0}
      - Deal 1 damage and Etch a copy of this card. Repeat for each Chain Lightning card in your Spell pile. Exhaust.
@@ -53,24 +53,24 @@ COMMON  20
    - Wild Cast       {1}
      - Deal 15[18] damage. Etch 2 Fizzles.  
      
-   - Undertow         {2}
-     - Gain 8[10] block. Draw 2[3] cards the beginning of your next turn.
+   - Scorching Wind {2}
+     - Deal 6[8] damage to ALL enemies. Etch this card.
    
  - Skills   9
     - Mage Armor      {2}
       - Gain 12[14] block. Etch a barrier card. 
       
     - Gust            {1}
-      - Gain 4[6] block. Apply 1 weak. If this card was cast, apply 2 weak instead.
+      - Gain 4[6] block. Apply 1 Weak. If this card was cast, apply 2 Weak instead.
       
     - Concentrate     {1}
-      - Gain 8[10] block. Etch 1 card.
+      - Gain 7[9] block. Etch 1 card.
      
     - Buy time        {1}
       - Gain 10[14] block. Etch 2 Fizzles.
 
     - Faerie Light    {0}
-      - Apply 1 weak and 1[2] vulnerable.
+      - Apply 1 Weak and 1[2] Vulnerable.
       
     - Mass Chant      {2}
       - Cast 3[4] cards.
@@ -78,19 +78,22 @@ COMMON  20
     - Ebb and Flow    {1}
       - Draw 2 cards. If this was cast, gain {2}[3] instead.
       
-    -
-      -
-      
+   - Undertow         {2}
+     - Gain 8[10] block. Draw 2[3] cards the beginning of your next turn.
+     
     - Reuse           {1}
       - Cast 1[2] card[s]. Etch 1 card from your Discard pile.
       
+    - Divide          {0}
+      - Put all Status cards into your Spell pile. [Turn them into Fizzles]
+      
 UNCOMMON  36
- - Attacks  14
+ - Attacks  14 - Cut 2 of them
     - Fireball        {4}
       - Deal 48[58] damage to a random enemy.
       
     - COMBO             {1}
-      - Deal 9[11] damage. Deals 4[5] additional damage for each card cast this turn.
+      - Deal 6 damage. Deals 4[5] additional damage for each card cast this turn.
      
    - Necrotic touch  {1}
      - Deal 12[15] damage. Take 3 damage.
@@ -105,10 +108,10 @@ UNCOMMON  36
       - Deal 10 damage to a random enemy 2[3] times.
       
     - Tremor         {2}
-      - Deal 9[12] damage to ALL enemies. Apply 1 weak to ALL enemies.
+      - Deal 9[12] damage to ALL enemies. Apply 1 Weak to ALL enemies.
       
-    -
-      -
+    - Mana Burst     {1}
+      - Deal 15[18] damage to ALL enemies. Etch 2 Fizzles. Bountiful.
       
     - Blood Rune     {1}
       - Deal 12[15] damage. Lose 2 hp. Etch this card.
@@ -128,7 +131,7 @@ UNCOMMON  36
     - Scorch         {3}
       - Deal 12[15] damage. Reduce this cost by 1 for each card Cast this turn.
       
- - Skills   13
+ - Skills   15
     - Desperate Measures {0}
       - Cast 2[3] cards. Take 8 damage. Exhaust.
       
@@ -154,19 +157,19 @@ UNCOMMON  36
       - Gain 6[8] block. Exhaust a card in your Draw pile.
       
     - Withering Curse {1}
-      - Apply 2 Weak on yourself and an Enemy. 
+      - Apply 2 Weak on yourself and an Enemy. [1 weak on yourself]
       
-    - 
-      - 
+    - Ripple          {2}
+      - Gain 4 Regen. [Retain]
       
-    - 
-      - 
+    - Divination      {1}
+      - Draw 2[3] cards. If this was Cast, draw 2 additional cards.
       
-    - 
-      - 
+    - Set up          {0}
+      - Etch 2[3] Cards. You may not Cast cards this turn.
       
-    - 
-      - 
+    - Fortify         {0}
+      - Each time you Cast a card this turn, gain 3[4] block.
       
 
  - Powers   9   x3 filling spell pile. x3 
@@ -180,12 +183,12 @@ UNCOMMON  36
       - Gain 5[7] block. Whenever you play a Power, gain 5[7] block.
       
     - Magical Residue    {1}
-      - Whenever you Etch a card, deal 3[5] damage to ALL enemies. (Draw a card?)
+      - [Innate]. Whenever you Etch a card, Draw a card. 
       
-    - ???           
-      - Whenever you Cast a card, do something (block? damage? vulnerable?)
+    - Filter      {1}           
+      - Whenever a Status is created, Etch it.
       
-    -   ???
+    - Mana Reflux    {2[1]}
       - Whenever you Cast a card that costs {2} or more, gain {1}.
       
     - Cheat Sheet        {2[1]}
@@ -197,13 +200,91 @@ UNCOMMON  36
     - Invoke: Firebolt   {2}
       - At the beginning of your turn, Etch 1 Firebolt[+].
       
+    - Font of Knowledge  {1}
+      - At the beginning of your turn, Draw 1 card for every 3[2] cards in your Spell Pile.
+      
 
 RARE      26
-
-    - Ice Wall        {0}
-      - If this card was cast, gain 1 buffer.
+ - Attacks 
+    - Worldfire         {3}
+      - Deal 15 damage to ALL enemies. Etch this card. Bountiful.
       
-      Fireworks     {10}
-       Deal 50 damage. Costs {1} less for each fizzle played. Complex.
+    - Explosion          {2}
+      - Deal 20 damage. Cast 1[2] card[s].
+      
+    - Fireworks          {10[8]}
+      - Deal 30 damage to ALL enemies. Costs {1} less for each Fizzle in your Exhaust Pile. Complex
+      
+    - Sinkhole           {2}
+      - Deal 10 damage. Apply 1[2] Weak to ALL enemies.
+      
+    - Tsunami            {3}
+      - Deal 20[25] damage to ALL enemies. Gain 1 Weakness.
+      
+    - Life Tap           {1}
+      - Deal 20 damage. Gain 2[1] Vulnerable.
+      
+    - Lightning Strike  {2}
+      - Deal 20 damage. Etch 1[2] Chain Lightning Cards. Etch this Card. Bountiful.
+      
+    - Earthquake         {2[1]}
+      - Deal 5 damage to ALL enemies. Apply 3 Vulnerable and 2 Weak to ALL enemies.
+      
+    - Death              {0}
+      - If this was Cast, halve the target's health.
+      
+    - Duplicate          {1}
+      - Cast 2[3] cards. Cast copies of them.
+      
     - Archmages Possession {3}
-      - Cast every card in your Spell pile.
+      - Cast your Spell Pile
+      
+    - Arcane Barrage     {1}
+      - Cast 2 cards. Deal 6[8] damage to a random enemy for each card Cast this turn.
+      
+ - Skills
+    - Sanctuary           {0}
+      - Innate. Gain 2[3] Artifact.
+    
+    - Ice Wall          {0}
+      - If this was Cast, gain 1 buffer.
+    
+    - Tidal Wave        {2}
+      - Gain 5[8] block. Etch this Card. Bountiful.
+    
+    - Fault Shift    {1}
+      - Apply 1 Weak. Apply 1 Vulnerable. Etch this Card. Bountiful.
+      
+    - Whirlpool        {1}
+      - Gain 12 block. Gain 8[10] vigor.
+      
+    - Forbidden Rites  {2}
+      - Cast 5 cards. Lose 8[4] hp.
+      
+    - Spell Weave      {0}
+      - Draw 2[4] cards. Etch 2 cards. Exhaust.
+      
+    - Innovation       {1}
+      - Etch 3 Fizzles. Gain 2[3] block for each Fizzle in your Spell Pile and Exhaust.
+      
+    - Wizard's Gambit  {1}
+      - Etch a card. If it cost {3} or more, Etch a copy[2 copies] of it. 
+      
+    - Pheonix's blessing {2}
+      - Etch every attack in your Discard Pile. [Upgrade them first]
+      
+    - Stone Walls       {1}
+      - Etch your hand. Gain 3[5] block for each Card Etched this way.
+
+ - Powers 
+    - Living Grimoire   {0}
+      - The first [two] time[s] you Etch a Card a turn, draw 1 card.
+      
+    - Immovable         {2[1]}
+      - Every time you gain Block, Apply 1 Weak to a random Enemy.
+      
+    - Fire body         {1}
+      - At the end of your turn, deal 2 damage to All enemies for each Card in your Spell Pile.
+    
+    - Eternal loop      {2}
+      - [Innate] At the end of your turn, Etch your hand.
