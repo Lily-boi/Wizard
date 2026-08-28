@@ -31,6 +31,8 @@
   "WIZARD-WILD_CAST.title": "Wild Cast",
   "WIZARD-FIZZLE.description": "",
   "WIZARD-FIZZLE.title": "Fizzle",
-  "WIZARD-BARRIER.description": "Gain {Block:diff()} [gold]block[/gold].",
-  "WIZARD-BARRIER.title": "Barrier"
+  "WIZARD-FORCE_FIELD.description": "Gain {Block:diff()} [gold]block[/gold].",
+  "WIZARD-FORCE_FIELD.title": "Force Field",
+  "WIZARD-MAGE_ARMOR.description": "Gain {Block:diff()} [gold]block[/gold]. Etch a Force Field at the start of your next turn.",
+  "WIZARD-MAGE_ARMOR.title": "Mage Armor"
 }

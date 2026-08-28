@@ -45,7 +45,7 @@ public class Chain_Lightning() : WizardCard(0, CardType.Attack, CardRarity.Commo
                 .WithHitFx("vfx/vfx_attack_slash", tmpSfx: "blunt_attack.mp3")
                 .Execute(choiceContext);
 
-            await EtchCmd.EtchNewCopy<Chain_Lightning>(card.Owner);
+            await EtchCmd.EtchCopy(card);
         }
     }
 

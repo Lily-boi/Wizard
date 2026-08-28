@@ -9,20 +9,20 @@ using Wizard.WizardCode.Keywords;
 namespace Wizard.WizardCode.Cards;
 
 
-public class Barrier() : WizardCard(0, CardType.Skill,
+public class Force_Field() : WizardCard(0, CardType.Skill,
     CardRarity.Status, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
         new DynamicVar[] { new BlockVar(4m, ValueProp.Move) };
     
     public override IEnumerable<CardKeyword> CanonicalKeywords =>
-        new[] { WizardKeywords.Bountiful };
+        new[] { WizardKeywords.Bountiful, CardKeyword.Exhaust };
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        Barrier card = this;
+        Force_Field card = this;
         await CreatureCmd.GainBlock(card.Owner.Creature, card.DynamicVars.Block, play);
     }
 

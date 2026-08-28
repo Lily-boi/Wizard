@@ -67,10 +67,19 @@ public static class EtchCmd
     }
     
     
+    public static async Task<CardModel> EtchCopy(CardModel source)
+    {
+        var copy = source.CreateClone();
+        await CardPileCmd.AddGeneratedCardToCombat(copy, SpellCardPile.SpellPileType, source.Owner, CardPilePosition.Random);
+        return copy;
+    }
+
+// "Etch a Fizzle" / "Etch a Barrier" — a fresh canonical instance of a type unrelated
+// to any card currently in play. No upgrade state to preserve since there's no source instance.
     public static async Task<CardModel> EtchNewCopy<T>(Player owner) where T : CardModel
     {
         var newCard = owner.Creature.CombatState.CreateCard<T>(owner);
-        await CardPileCmd.AddGeneratedCardToCombat(newCard, SpellCardPile.SpellPileType, owner);
+        await CardPileCmd.AddGeneratedCardToCombat(newCard, SpellCardPile.SpellPileType, owner, CardPilePosition.Random);
         return newCard;
     }
 }
