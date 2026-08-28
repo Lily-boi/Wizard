@@ -1,5 +1,5 @@
 {
-  "WIZARD-MAGES_BOOK.description": "",
-  "WIZARD-MAGES_BOOK.flavor": "",
-  "WIZARD-MAGES_BOOK.title": "MagesBook"
+  "WIZARD-APPRENTICES_BOOK.description": "At the start of combat, [gold]Etch[/gold] {Cards} card in your hand, then draw a card.",
+  "WIZARD-APPRENTICES_BOOK.flavor": "",
+  "WIZARD-APPRENTICES_BOOK.title": "Apprentice's Book"
 }

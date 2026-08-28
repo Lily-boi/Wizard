@@ -1,9 +1,11 @@
-﻿using MegaCrit.Sts2.Core.Commands;
+﻿// CastCmd.cs — both methods now flip WasCast around the AutoPlay call
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using Wizard.WizardCode.CardPiles;
+using Wizard.WizardCode.Cards;
 
 namespace Wizard.WizardCode.Commands;
 
@@ -18,7 +20,27 @@ public static class CastCmd
 
         await CardPileCmd.Add(card, PileType.Play);
         card.ExhaustOnNextPlay = forceExhaust;
-        await CardCmd.AutoPlay(choiceContext, card, null);
+
+        if (card is WizardCard wc) wc.WasCast = true;
+        try { await CardCmd.AutoPlay(choiceContext, card, null); }
+        finally { if (card is WizardCard wc2) wc2.WasCast = false; }
+        return card;
+    }
+
+    public static async Task<CardModel?> CastFromSpellPile(
+        PlayerChoiceContext choiceContext, CardModel card, bool forceExhaust = false)
+    {
+        if (card.Owner.Creature.IsDead) return null;
+
+        var spellPile = SpellCardPile.SpellPileType.GetPile(card.Owner);
+        if (!spellPile.Cards.Contains(card)) return null;
+
+        await CardPileCmd.Add(card, PileType.Play);
+        card.ExhaustOnNextPlay = forceExhaust;
+
+        if (card is WizardCard wc) wc.WasCast = true;
+        try { await CardCmd.AutoPlay(choiceContext, card, null); }
+        finally { if (card is WizardCard wc2) wc2.WasCast = false; }
         return card;
     }
 

@@ -21,20 +21,27 @@ public class Wizard : PlaceholderCharacterModel
 
     public override Color NameColor => Color;
     public override CharacterGender Gender => CharacterGender.Neutral;
-    public override int StartingHp => 70;
+    public override int StartingHp => 60;
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<Inscribe>(),
-        ModelDb.Card<Recite>()
+        ModelDb.Card<StrikeWizard>(),
+        ModelDb.Card<StrikeWizard>(),
+        ModelDb.Card<StrikeWizard>(),
+        ModelDb.Card<StrikeWizard>(),
+        ModelDb.Card<StrikeWizard>(),
+        ModelDb.Card<DefendWizard>(),
+        ModelDb.Card<DefendWizard>(),
+        ModelDb.Card<DefendWizard>(),
+        ModelDb.Card<DefendWizard>(),
+        ModelDb.Card<DefendWizard>(),
+        ModelDb.Card<Engrave>(),
+        ModelDb.Card<Summon>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<MagesBook>()
+        ModelDb.Relic<ApprenticesBook>()
     ];
 
     public override CardPoolModel CardPool => ModelDb.CardPool<WizardCardPool>();

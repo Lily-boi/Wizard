@@ -1,15 +1,17 @@
 ﻿Starting Relic
  - Apprentices Book
-   - At the start of combat, Etch 1 card in your hand.
+   - At the start of combat, Etch 1 card in your hand, draw a card.
  - Mages Book
-   - At the start of combat, Etch 1 card in your deck.
-   GAMBLING CHIP
+   - At the start of combat, Etch 1 card in your deck, draw a card.
+
 Starting Cards
  - Inscribe         {1}     Skill  Common
    - Etch 2 cards [at random | ]
  - Recite           {0}    Attack  Common
    - Cast 1[2] card[s]
    
+   
+   TOO MUCH AOE
    
    Core Mechanics to this character (archetypes)
     - Filling the Spell Pile with lots of cards (chain lightning, book strike, etc)
@@ -27,19 +29,19 @@ COMMON  20
      - Deal 8[10] damage. Etch a card [at random | ].
      
    - Magic Missile   {1}
-     - Deal 4[6] damage to a random enemy 3 times. Repeat an additional 2 times if this card was cast.
+     - Deal 3[5] damage to a random enemy 3 times. Repeat an additional 2 times if this card was cast.
      
    - Maelstrom Pulse {2}
      - Deal 5[8] damage to ALL enemies. Etch this card.
      
    - Icicle          {1}
-     - Deal 3[5] damage. Gain 3[5] block. Repeat an additional time if this card was cast.
+     - Deal 3[5] damage. Gain 2[3] block. Repeat an additional time if this card was cast.
 
    - Fire bolt       {1}
-     - Deal 10[12] damage. Deals 5[7] additional damage if this card was cast.
+     - Deal 8[10] damage. Deals 5[7] additional damage if this card was cast.
      
    - Acid Splash     {1}
-     - Deal 6 damage to a random enemy 2[3] times.
+     - Deal 5 damage to a random enemy 2[3] times.
 
    - Mudslide        {1}
      - Deal 6[8] damage. Apply 1 Vulnerable.
@@ -52,78 +54,75 @@ COMMON  20
      
    - Wild Cast       {1}
      - Deal 15[18] damage. Etch 2 Fizzles.  
-     
-   - Scorching Wind {2}
-     - Deal 6[8] damage to ALL enemies. Etch this card.
    
  - Skills   9
     - Mage Armor      {2}
       - Gain 12[14] block. Etch a barrier card. 
       
-    - Gust            {1}
+    - Gust            {1}   3->5
       - Gain 4[6] block. Apply 1 Weak. If this card was cast, apply 2 Weak instead.
       
-    - Concentrate     {1}
+    - Concentrate     {1}    {2} + cast a card
       - Gain 7[9] block. Etch 1 card.
      
     - Buy time        {1}
       - Gain 10[14] block. Etch 2 Fizzles.
 
     - Faerie Light    {0}
-      - Apply 1 Weak and 1[2] Vulnerable.
+      - Apply 1 Weak and 1[2] Vulnerable. Exhaust
       
     - Mass Chant      {2}
       - Cast 3[4] cards.
     
-    - Ebb and Flow    {1}
+    - Ebb and Flow    {1}   Uncommon?
       - Draw 2 cards. If this was cast, gain {2}[3] instead.
       
    - Undertow         {2}
-     - Gain 8[10] block. Draw 2[3] cards the beginning of your next turn.
+     - Gain 8[10] block. Draw 2[3] cards at the beginning of your next turn.
      
     - Reuse           {1}
       - Cast 1[2] card[s]. Etch 1 card from your Discard pile.
       
-    - Divide          {0}
-      - Put all Status cards into your Spell pile. [Turn them into Fizzles]
+    - Divide          {0}   Exhaust any cards in your hand, turn them into fizzles exhaust. [retain] {1}
+      - Put all Status cards into your Spell pile. [Turn them into Fizzles]. Exhaust.
       
 UNCOMMON  36
  - Attacks  14 - Cut 2 of them
     - Fireball        {4}
       - Deal 48[58] damage to a random enemy.
       
-    - COMBO             {1}
+    - COMBO             {1} deal 6 (swap wiht magic missile?)
       - Deal 6 damage. Deals 4[5] additional damage for each card cast this turn.
      
-   - Necrotic touch  {1}
-     - Deal 12[15] damage. Take 3 damage.
+   - Necrotic touch  {1}  Iffy, sorta just filler
+     - Deal 12[15] damage. Lose 3 hp.
       
-    - Riptide        {2}
+    - Riptide        {2} Start of next turn? 
       - Deal 8[10] damage to ALL enemies. Gain 2[4] vigor.
       
     - Pyroclasm      {3}
       - Deal 12[15] damage to ALL enemies. Etch this card.
       
-    - Burning Grip   {2}
+    - Burning Grip   {2} bump up damage
       - Deal 10 damage to a random enemy 2[3] times.
       
-    - Tremor         {2}
-      - Deal 9[12] damage to ALL enemies. Apply 1 Weak to ALL enemies.
+    - Tremor         {2} 
+      - Gain 3[4] block for each enemy. Apply 1 Weak to ALL enemies.
       
-    - Mana Burst     {1}
+    - Mana Burst     {1} Single target
       - Deal 15[18] damage to ALL enemies. Etch 2 Fizzles. Bountiful.
       
-    - Blood Rune     {1}
+    - Blood Rune     {1}    Block Card -> move to common
       - Deal 12[15] damage. Lose 2 hp. Etch this card.
       
     - Momentum       {0}
       - Deal 5[8] damage to a random enemy equal to the amount of times you've Cast a card this turn.
       
-    - Sleet storm    {1}
+    - Sleet storm    {1}  Filler
       - Deal 5[7] damage to a random enemy 3 times.
       
-    - Spell Spray    {1}
-      - Deal 3[4] damage to a random enemy. Draw 1 card. Draw an additional card if this was Cast.
+    - Spell Spray    {1} Apply Weak make skill. 
+      - Deal 7[9] damage to a random enemy. Draw 1 card. Draw a card when this is Etched.
       
     - Spark Missile  {1}
       - Deal 10[13] damage. Etch a Fizzle if this card wasn't Cast.
@@ -133,25 +132,25 @@ UNCOMMON  36
       
  - Skills   15
     - Desperate Measures {0}
-      - Cast 2[3] cards. Take 8 damage. Exhaust.
+      - Cast 2[3] cards. Lose 5 hp. Exhaust.
       
     - Overload        {0}
-      - Gain 2[3] mana. Etch 2 Fizzles.
+      - Gain {2}[3]. Etch 2 Fizzles.
       
     - Spare page      {1}
-      - Draw 1 card. Etch 1[2] card[s].
+      - Draw 1[2] card. Etch 1[2] card[s].
       
-    - Divination/Foresight  {1}
+    - Foresight       {1}
       - Look at the top 3[5] cards of your Draw pile. Etch 1 of them.
       
-    - Petrify        {3}
-      - Target enemy loses 5[8] strength. Apply 2 Weak and 2[3] Vulnerable to that enemy.
+    - Petrify        {3[2]}
+      - Target enemy loses 2 strength. Apply 2 Weak and 2 Vulnerable to that enemy.
       
-    - Earthen Wall   {2}
+    - Earthen Wall   {1}
       - Gain 7[9] Block. If this card was Cast, gain an additional 5[7] block.
       
     - Tidewater      {1}
-      - Gain {2}[{3}] next turn. If this was cast, gain it this turn instead.
+      - Gain {2} next turn. If this was cast, gain it this turn instead and draw [2] card.
       
     - Cleansing wave {1}
       - Gain 6[8] block. Exhaust a card in your Draw pile.
@@ -159,14 +158,14 @@ UNCOMMON  36
     - Withering Curse {1}
       - Apply 2 Weak on yourself and an Enemy. [1 weak on yourself]
       
-    - Ripple          {2}
-      - Gain 4 Regen. [Retain]
+    - Ripple          {2}          -> 0 when cast, gain 3 regen
+      - [Retain] Gain 3 Regen. Exhaust.
       
     - Divination      {1}
       - Draw 2[3] cards. If this was Cast, draw 2 additional cards.
       
     - Set up          {0}
-      - Etch 2[3] Cards. You may not Cast cards this turn.
+      - Etch 2[3] Cards. You can't Cast cards this turn. Exhaust.
       
     - Fortify         {0}
       - Each time you Cast a card this turn, gain 3[4] block.
@@ -180,21 +179,21 @@ UNCOMMON  36
       - Reduce the cost of a random card in your hand by 1[2] at the beginning of each turn.
       
     - Preparation        {1}
-      - Gain 5[7] block. Whenever you play a Power, gain 5[7] block.
+      - Gain 5[7] block. Whenever you play a Power, gain 3[5] block.
       
-    - Magical Residue    {1}
+    - Magical Residue    {2}   -> rare?
       - [Innate]. Whenever you Etch a card, Draw a card. 
       
-    - Filter      {1}           
+    - Filter            {2[1]}          -> etch it twice [etch once]   
       - Whenever a Status is created, Etch it.
       
-    - Mana Reflux    {2[1]}
+    - Mana Reflux       {2[1]} 
       - Whenever you Cast a card that costs {2} or more, gain {1}.
       
-    - Cheat Sheet        {2[1]}
+    - Cheat Sheet        {2[1]} Rare?
       - The first time you Etch a card each turn, Etch a copy with Exhaust
       
-    - Invoke: Icicle     {2}
+    - Invoke: Icicle     {2} Rare?
       - At the beginning of your turn, Etch 1 Icicle[+].
       
     - Invoke: Firebolt   {2}
@@ -231,7 +230,7 @@ RARE      26
       - Deal 5 damage to ALL enemies. Apply 3 Vulnerable and 2 Weak to ALL enemies.
       
     - Death              {0}
-      - If this was Cast, halve the target's health.
+      - If this was Cast, halve the target's health. 
       
     - Duplicate          {1}
       - Cast 2[3] cards. Cast copies of them.

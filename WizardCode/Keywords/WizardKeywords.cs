@@ -7,7 +7,7 @@ namespace Wizard.WizardCode.Keywords;
 
 public static class WizardKeywords
 {
-    [CustomEnum] [KeywordProperties(AutoKeywordPosition.Before)]
+    [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
     public static CardKeyword Complex;
     
     [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
@@ -15,4 +15,7 @@ public static class WizardKeywords
 
     [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
     public static CardKeyword Cast;
+
+    [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
+    public static CardKeyword Bountiful;
 }

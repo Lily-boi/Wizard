@@ -1,10 +1,13 @@
 {
   "WIZARD-COMPLEX.title": "Complex",
-  "WIZARD-COMPLEX.description": "Cannot be [gold]Etched[/gold] into your spell pile.",
+  "WIZARD-COMPLEX.description": "Cannot be [gold]Etched[/gold] into your Spell Pile.",
 
   "WIZARD-ETCH.title": "Etch",
-  "WIZARD-ETCH.description": "Shuffle a card into your spell pile.",
+  "WIZARD-ETCH.description": "Shuffle a card into your Spell Pile.",
   
   "WIZARD-CAST.title": "Cast",
-  "WIZARD-CAST.description": "Play the top card in your spell pile."
+  "WIZARD-CAST.description": "Play the top card in your Spell Pile.",
+  
+  "WIZARD-BOUNTIFUL.title": "Bountiful",
+  "WIZARD-BOUNTIFUL.description": "At the end of your turn, Cast this Card if it is in your Spell Pile"
 }

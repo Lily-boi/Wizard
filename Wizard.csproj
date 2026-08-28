@@ -74,7 +74,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="Wizard\images\card_portraits\big\"/>
         <Folder Include="Wizard\images\combat_ui\" />
         <Folder Include="Wizard\images\powers\big\"/>
         <Folder Include="Wizard\images\relics\big\"/>

@@ -7,9 +7,9 @@ using Wizard.WizardCode.Keywords;
 
 namespace Wizard.WizardCode.Cards;
 
-public sealed class Inscribe : WizardCard
+public sealed class Engrave : WizardCard
 {
-    public Inscribe() : base(1, CardType.Skill, CardRarity.Common, TargetType.Self)
+    public Engrave() : base(1, CardType.Skill, CardRarity.Basic, TargetType.Self)
     {
     }
 
@@ -18,7 +18,7 @@ public sealed class Inscribe : WizardCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        Inscribe source = this;
+        Engrave source = this;
 
         if (source.IsUpgraded)
         {

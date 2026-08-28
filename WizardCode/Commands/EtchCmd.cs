@@ -65,4 +65,12 @@ public static class EtchCmd
 
         return etched;
     }
+    
+    
+    public static async Task<CardModel> EtchNewCopy<T>(Player owner) where T : CardModel
+    {
+        var newCard = owner.Creature.CombatState.CreateCard<T>(owner);
+        await CardPileCmd.AddGeneratedCardToCombat(newCard, SpellCardPile.SpellPileType, owner);
+        return newCard;
+    }
 }
