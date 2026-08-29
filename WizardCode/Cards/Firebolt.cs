@@ -12,7 +12,7 @@ using Wizard.WizardCode.Keywords;
 
 namespace Wizard.WizardCode.Cards;
 
-public class Fire_Bolt() : WizardCard(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+public class Firebolt() : WizardCard(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         new[] { HoverTipFactory.FromKeyword(WizardKeywords.Cast) };
@@ -26,7 +26,7 @@ public class Fire_Bolt() : WizardCard(1, CardType.Attack, CardRarity.Common, Tar
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        Fire_Bolt card = this;
+        Firebolt card = this;
         ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
 
         decimal amount = card.DynamicVars.Damage._baseValue +

@@ -1,3 +1,11 @@
-{  "ETCH_FORCE_FIELD_NEXT_TURN_POWER.description": "",
-  "ETCH_FORCE_FIELD_NEXT_TURN_POWER.smartDescription": "",
-  "ETCH_FORCE_FIELD_NEXT_TURN_POWER.title": "EtchForceFieldNextTurnPower"}
+{
+  "ETCH_FORCE_FIELD_NEXT_TURN_POWER.description": "Etch [gold]Force Field[/gold] at the beginning your next turn.",
+  "ETCH_FORCE_FIELD_NEXT_TURN_POWER.smartDescription": "Etch [gold]Force Field[/gold] at the beginning your next turn.",
+  "ETCH_FORCE_FIELD_NEXT_TURN_POWER.title": "Force Field",
+  "FORTIFY_POWER.description": "Whenever you [gold]Cast[/gold] a card this turn, gain [blue]3[/blue] [gold]Block[/gold].",
+  "FORTIFY_POWER.smartDescription": "Whenever you [gold]Cast[/gold] a card this turn, gain [blue]{Amount}[/blue] [gold]Block[/gold].",
+  "FORTIFY_POWER.title": "Fortify",
+  "WIZARD-ARCHMAGES_HAT_POWER.description": "At the beginning of your turn, lower the cost of a random card in hand by [blue]1[/blue] until played",
+  "WIZARD-ARCHMAGES_HAT_POWER.smartDescription": "At the beginning of your turn, lower the cost of a random card in hand by [blue]1[/blue] until played",
+  "WIZARD-ARCHMAGES_HAT_POWER.title": "Archmages HatPower"
+}

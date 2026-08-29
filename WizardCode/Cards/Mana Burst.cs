@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
@@ -13,29 +12,28 @@ using Wizard.WizardCode.Keywords;
 
 namespace Wizard.WizardCode.Cards;
 
-public class Wild_Cast() : WizardCard(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+public class Mana_Burst() : WizardCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.RandomEnemy)
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-        new[]
-        {
-            HoverTipFactory.FromKeyword(WizardKeywords.Etch),
-            HoverTipFactory.FromCard<Fizzle>(),
-        };
+        new[] { HoverTipFactory.FromKeyword(WizardKeywords.Etch), HoverTipFactory.FromKeyword(WizardKeywords.Bountiful) };
+
+    public override IEnumerable<CardKeyword> CanonicalKeywords =>
+        new[] { WizardKeywords.Bountiful };
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
-        new DynamicVar[] { new DamageVar(15M, ValueProp.Move), new IntVar("fizzleCount", 2) };
+        new DynamicVar[] { new DamageVar(15M, ValueProp.Move) };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        Wild_Cast card = this;
-        ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
-        AttackCommand attackCommand = await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue)
-            .FromCard(card, cardPlay)
-            .Targeting(cardPlay.Target)
+        Mana_Burst card = this;
+        var attack = DamageCmd.Attack(card.DynamicVars.Damage.BaseValue);
+        attack = card.WasCast ? attack.FromSpellPile(card, cardPlay) : attack.FromCard(card, cardPlay);
+        AttackCommand attackCommand = await attack
+            .TargetingRandomOpponents(card.CombatState)
             .WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "heavy_attack.mp3")
             .Execute(choiceContext);
 
-        for (int i = 0; i < card.DynamicVars["fizzleCount"].BaseValue; i++)
+        for (int i = 0; i < 2; i++)
             await EtchCmd.EtchNewCopy<Fizzle>(card.Owner);
     }
 

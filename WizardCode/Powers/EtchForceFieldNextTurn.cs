@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using MegaCrit.Sts2.Core.Combat;
+﻿using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
-using MegaCrit.Sts2.Core.Models;
 using Wizard.WizardCode.Cards;
 using Wizard.WizardCode.Commands;
 
@@ -12,7 +9,7 @@ namespace Wizard.WizardCode.Powers;
 
 
 
-public sealed class EtchForceFieldNextTurnPower : PowerModel
+public sealed class EtchForceFieldNextTurnPower : WizardPower
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;

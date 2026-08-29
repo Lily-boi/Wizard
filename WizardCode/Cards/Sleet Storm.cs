@@ -1,44 +1,34 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.ValueProps;
-using Wizard.WizardCode.CardPiles;
-using Wizard.WizardCode.Keywords;
+using Wizard.WizardCode.Commands;
 
 namespace Wizard.WizardCode.Cards;
 
-public class Magic_Missile() : WizardCard(1, CardType.Attack, CardRarity.Common, TargetType.RandomEnemy)
+public class Sleet_Storm() : WizardCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.RandomEnemy)
 {
-    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-        new[] { HoverTipFactory.FromKeyword(WizardKeywords.Cast) };
-
     protected override IEnumerable<DynamicVar> CanonicalVars =>
         new DynamicVar[]
         {
-            new DamageVar(2M, ValueProp.Move),
+            new DamageVar(5M, ValueProp.Move),
             new RepeatVar(3)
         };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        Magic_Missile card = this;
-        int hits = card.DynamicVars.Repeat.IntValue + (card.WasCast ? 2 : 0);
-
-        AttackCommand attackCommand = await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue)
-            .WithHitCount(hits)
-            .FromCard(card, cardPlay)
+        Sleet_Storm card = this;
+        var attack = DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).WithHitCount(card.DynamicVars.Repeat.IntValue);
+        attack = card.WasCast ? attack.FromSpellPile(card, cardPlay) : attack.FromCard(card, cardPlay);
+        AttackCommand attackCommand = await attack
             .TargetingRandomOpponents(card.CombatState)
             .WithHitFx("vfx/vfx_attack_slash", tmpSfx: "blunt_attack.mp3")
             .Execute(choiceContext);
     }
+
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(2M);
 }

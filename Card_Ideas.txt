@@ -29,7 +29,7 @@ COMMON  20
      - Deal 8[10] damage. Etch a card [at random | ].
      
    - Magic Missile   {1}
-     - Deal 3[5] damage to a random enemy 3 times. Repeat an additional 2 times if this card was cast.
+     - Deal 2[4] damage to a random enemy 3 times. Repeat an additional 2 times if this card was cast.
      
    - Maelstrom Pulse {2}
      - Deal 5[8] damage to ALL enemies. Etch this card.
@@ -59,11 +59,11 @@ COMMON  20
     - Mage Armor      {2}
       - Gain 12[14] block. Etch a barrier card. 
       
-    - Gust            {1}   3->5
-      - Gain 4[6] block. Apply 1 Weak. If this card was cast, apply 2 Weak instead.
+    - Gust            {1}   
+      - Gain 3[5] block. Apply 1 Weak. If this card was cast, apply 2 Weak instead.
       
-    - Concentrate     {1}    {2} + cast a card
-      - Gain 7[9] block. Etch 1 card.
+    - Concentrate     {2}    
+      - Gain 7[9] block. Etch 1 card. Cast 1 card.
      
     - Buy time        {1}
       - Gain 10[14] block. Etch 2 Fizzles.
@@ -73,9 +73,9 @@ COMMON  20
       
     - Mass Chant      {2}
       - Cast 3[4] cards.
-    
-    - Ebb and Flow    {1}   Uncommon?
-      - Draw 2 cards. If this was cast, gain {2}[3] instead.
+
+    - Study Ahead     {0}
+      - Etch the top card of your deck. [Exhaust | ]
       
    - Undertow         {2}
      - Gain 8[10] block. Draw 2[3] cards at the beginning of your next turn.
@@ -83,7 +83,7 @@ COMMON  20
     - Reuse           {1}
       - Cast 1[2] card[s]. Etch 1 card from your Discard pile.
       
-    - Divide          {0}   Exhaust any cards in your hand, turn them into fizzles exhaust. [retain] {1}
+    - Divide          {0}
       - Put all Status cards into your Spell pile. [Turn them into Fizzles]. Exhaust.
       
 UNCOMMON  36
@@ -91,37 +91,34 @@ UNCOMMON  36
     - Fireball        {4}
       - Deal 48[58] damage to a random enemy.
       
-    - COMBO             {1} deal 6 (swap wiht magic missile?)
+    - COMBO             {1}
       - Deal 6 damage. Deals 4[5] additional damage for each card cast this turn.
-     
-   - Necrotic touch  {1}  Iffy, sorta just filler
-     - Deal 12[15] damage. Lose 3 hp.
       
-    - Riptide        {2} Start of next turn? 
+    - Riptide        {2} 
       - Deal 8[10] damage to ALL enemies. Gain 2[4] vigor.
       
     - Pyroclasm      {3}
       - Deal 12[15] damage to ALL enemies. Etch this card.
       
-    - Burning Grip   {2} bump up damage
+    - Burning Grip   {2}
       - Deal 10 damage to a random enemy 2[3] times.
       
     - Tremor         {2} 
       - Gain 3[4] block for each enemy. Apply 1 Weak to ALL enemies.
       
-    - Mana Burst     {1} Single target
-      - Deal 15[18] damage to ALL enemies. Etch 2 Fizzles. Bountiful.
+    - Mana Burst     {1}
+      - Deal 15[18] damage to a random enemy. Etch 2 Fizzles. Bountiful.
       
-    - Blood Rune     {1}    Block Card -> move to common
-      - Deal 12[15] damage. Lose 2 hp. Etch this card.
+    - Blood Rune     {1}
+      - Gain 10[13] Block. Lose 2 hp. Etch this card.
       
     - Momentum       {0}
       - Deal 5[8] damage to a random enemy equal to the amount of times you've Cast a card this turn.
       
-    - Sleet storm    {1}  Filler
+    - Sleet storm    {1} 
       - Deal 5[7] damage to a random enemy 3 times.
       
-    - Spell Spray    {1} Apply Weak make skill. 
+    - Spell Spray    {1} 
       - Deal 7[9] damage to a random enemy. Draw 1 card. Draw a card when this is Etched.
       
     - Spark Missile  {1}
@@ -131,6 +128,9 @@ UNCOMMON  36
       - Deal 12[15] damage. Reduce this cost by 1 for each card Cast this turn.
       
  - Skills   15
+    - Ebb and Flow    {1} 
+      - Draw 2 cards. If this was cast, gain {2}[3] instead.
+      
     - Desperate Measures {0}
       - Cast 2[3] cards. Lose 5 hp. Exhaust.
       
@@ -138,7 +138,7 @@ UNCOMMON  36
       - Gain {2}[3]. Etch 2 Fizzles.
       
     - Spare page      {1}
-      - Draw 1[2] card. Etch 1[2] card[s].
+      - Draw 1[2] card. Etch 1[2] card[s]. Exhaust.
       
     - Foresight       {1}
       - Look at the top 3[5] cards of your Draw pile. Etch 1 of them.
@@ -149,8 +149,8 @@ UNCOMMON  36
     - Earthen Wall   {1}
       - Gain 7[9] Block. If this card was Cast, gain an additional 5[7] block.
       
-    - Tidewater      {1}
-      - Gain {2} next turn. If this was cast, gain it this turn instead and draw [2] card.
+    - Tidewater     {1}
+      - Gain {2} next turn. If this was cast, gain {1} this turn and draw a[2] card[s].
       
     - Cleansing wave {1}
       - Gain 6[8] block. Exhaust a card in your Draw pile.
@@ -171,7 +171,7 @@ UNCOMMON  36
       - Each time you Cast a card this turn, gain 3[4] block.
       
 
- - Powers   9   x3 filling spell pile. x3 
+ - Powers
     - Efficient Casting  {2[1]}
       - Cast 1 card at the end of each turn.
          
@@ -181,32 +181,26 @@ UNCOMMON  36
     - Preparation        {1}
       - Gain 5[7] block. Whenever you play a Power, gain 3[5] block.
       
-    - Magical Residue    {2}   -> rare?
-      - [Innate]. Whenever you Etch a card, Draw a card. 
-      
-    - Filter            {2[1]}          -> etch it twice [etch once]   
-      - Whenever a Status is created, Etch it.
+    - Filter            {2}
+      - Whenever a Status is created, Etch it [and a copy of it |].
       
     - Mana Reflux       {2[1]} 
       - Whenever you Cast a card that costs {2} or more, gain {1}.
       
-    - Cheat Sheet        {2[1]} Rare?
-      - The first time you Etch a card each turn, Etch a copy with Exhaust
-      
-    - Invoke: Icicle     {2} Rare?
-      - At the beginning of your turn, Etch 1 Icicle[+].
+    - Invoke: Magic Missile {1}
+      - At the beginning of your turn, Etch 1 Magic Missile[+] with Exhaust.
       
     - Invoke: Firebolt   {2}
-      - At the beginning of your turn, Etch 1 Firebolt[+].
+      - At the beginning of your turn, Etch 1 Firebolt[+] with Exhaust.
       
     - Font of Knowledge  {1}
       - At the beginning of your turn, Draw 1 card for every 3[2] cards in your Spell Pile.
       
 
-RARE      26
+RARE     
  - Attacks 
     - Worldfire         {3}
-      - Deal 15 damage to ALL enemies. Etch this card. Bountiful.
+      - Deal 15[19] damage to ALL enemies. Etch this card. Bountiful.
       
     - Explosion          {2}
       - Deal 20 damage. Cast 1[2] card[s].
@@ -287,3 +281,23 @@ RARE      26
     
     - Eternal loop      {2}
       - [Innate] At the end of your turn, Etch your hand.
+            
+    - Cheat Sheet        {2[1]}
+      - The first time you Etch a card each turn, Etch a copy with Exhaust
+      
+    - Magical Residue    {2}
+      - [Innate]. Whenever you Etch a card, Draw a card. 
+      
+    - Invoke: Icicle     {2}
+      - At the beginning of your turn, Etch 1 Icicle[+] with Exhaust.
+      
+    - Invoke: Chain Lightning {3}
+      - At the beginning of your turn, Etch 1 Chain Lightning[+].
+      
+      
+ - Ancient
+    - From Memory   {0}
+       - Etch up to 2[3] cards from your Draw Pile.
+       
+    - Time Warp     {3}
+       - [Innate]. Take an extra turn after this one.

@@ -25,26 +25,21 @@ public class ApprenticesBook() : WizardRelic
         new[] { HoverTipFactory.FromKeyword(WizardKeywords.Etch) };
 
     public override async Task BeforeSideTurnStart(
-        PlayerChoiceContext choiceContext,
-        CombatSide side,
-        IReadOnlyList<Creature> participants,
-        ICombatState combatState)  
+        PlayerChoiceContext choiceContext, CombatSide side,
+        IReadOnlyList<Creature> participants, ICombatState combatState)
     {
-        ApprenticesBook apprenticesBook = this;
-        if (!participants.Contains(apprenticesBook._owner.Creature) ||
-            apprenticesBook._owner.PlayerCombatState.TurnNumber > 1)
-        {
+        ApprenticesBook book = this;
+        if (participants.Contains(book._owner.Creature))
+            CastState.ResetForNewTurn(book._owner);
+
+        if (!participants.Contains(book._owner.Creature) ||
+            book._owner.PlayerCombatState.TurnNumber > 1)
             return;
-        }
 
-        apprenticesBook.Flash();
-
+        book.Flash();
         var etched = await EtchCmd.EtchChosenFromHand(
-            choiceContext, apprenticesBook._owner, apprenticesBook, apprenticesBook.DynamicVars.Cards.IntValue);
-
+            choiceContext, book._owner, book, book.DynamicVars.Cards.IntValue);
         if (etched.Count > 0)
-        {
-            await CardPileCmd.Draw(choiceContext, 1M, apprenticesBook._owner);
-        }
+            await CardPileCmd.Draw(choiceContext, 1M, book._owner);
     }
 }

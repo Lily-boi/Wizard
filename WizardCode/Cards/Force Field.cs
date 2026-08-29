@@ -12,6 +12,7 @@ namespace Wizard.WizardCode.Cards;
 public class Force_Field() : WizardCard(0, CardType.Skill,
     CardRarity.Status, TargetType.Self)
 {
+    public override bool GainsBlock => true;
     protected override IEnumerable<DynamicVar> CanonicalVars =>
         new DynamicVar[] { new BlockVar(4m, ValueProp.Move) };
     
