@@ -1,26 +1,28 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1788047649
+::res://::1788051160
 Card_Ideas.txt::TextFile::-1::1788047649::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1783367485::0::1::::<><><>0<>0<><>::
 Wizard.json::JSON::-1::1783367583::0::1::::<><><>0<>0<><>::
 ::res://bin/::1783402742
 ::res://bin/ExportRelease/::1783402742
 ::res://bin/ExportRelease/net9.0/::1783402742
-::res://bin/ExportRelease/net9.0/publish/::1788051002
-Wizard.deps.json::JSON::-1::1788049114::0::1::::<><><>0<>0<><>::
+::res://bin/ExportRelease/net9.0/publish/::1788060204
+Wizard.deps.json::JSON::-1::1788060204::0::1::::<><><>0<>0<><>::
+::res://Mod File/::1788051112
+::res://Mod File/Wizard/::1788051112
+Wizard.json::JSON::-1::1783367583::0::1::::<><><>0<>0<><>::
 ::res://Wizard/::1783402745
 mod_image.png::CompressedTexture2D::7007238833105909473::1783367485::1783402745::1::::<><><>0<>0<>d63806b34c02cb4cdb20a4e42257c0b0<>res://.godot/imported/mod_image.png-2568a0af1f5f3e448f755e36e8d07ad4.ctex::
 ::res://Wizard/images/::1783377281
 ::res://Wizard/images/card_portraits/::1783402745
 card.png::CompressedTexture2D::3152328501068144497::1783367485::1783402745::1::::<><><>0<>0<>9cd5e7629e06358b10de46d890ed08a2<>res://.godot/imported/card.png-0b3af82afb3a205fa39698bdae85abbd.ctex::
-::res://Wizard/images/card_portraits/big/::1787954518
+::res://Wizard/images/card_portraits/big/::1788060180
 acid_splash.png::CompressedTexture2D::6820697340443085855::1787893982::1787896540::1::::<><><>0<>0<>25afc541bfddbfa947eb8827b7689537<>res://.godot/imported/acid_splash.png-0a1d5010dc72addb8505e31944a9aaa7.ctex::
 book_strike.png::CompressedTexture2D::5047303555619801623::1787894315::1787896540::1::::<><><>0<>0<>7939e2c8cc48cf2a3225a6cec5fa3df8<>res://.godot/imported/book_strike.png-27ffc235d137284add4265380b54a0b5.ctex::
 card.png::CompressedTexture2D::8020651168915603370::1783367485::1783402745::1::::<><><>0<>0<>5c27c28b5de6b62f5e878006aa008688<>res://.godot/imported/card.png-0398a4b623982656c1455825118db2e3.ctex::
 chain_lightning.png::CompressedTexture2D::2943411678002483163::1787894436::1787896540::1::::<><><>0<>0<>ec8ca56fcd5ea20a4f30b00acd003e30<>res://.godot/imported/chain_lightning.png-6fb46828dc29c513a99e6786edbf2430.ctex::
 defend_wizard.png::CompressedTexture2D::6222231164820960117::1787894103::1787896540::1::::<><><>0<>0<>b9e6ad39221f1002363a0c803f4012c4<>res://.godot/imported/defend_wizard.png-48f26969d2729a93f34ca5bac47e7491.ctex::
 dual_cast.png::CompressedTexture2D::4000757739319033920::1787894531::1787896540::1::::<><><>0<>0<>88734cbb6cacf364c27f0cb15b1423f9<>res://.godot/imported/dual_cast.png-7b0abdffa1c1cae9f76d7e9c6c570fc1.ctex::
-engrave.png::CompressedTexture2D::6511148677411643658::1787895410::1787896540::1::::<><><>0<>0<>c365411f6aae287116b79b067621ed5b<>res://.godot/imported/engrave.png-222844d5f2703b33f6deb5d2ac19c127.ctex::
 firebolt.png::CompressedTexture2D::3539669453276472199::1787894713::1787954518::1::::<><><>0<>0<>1eed9000b393646136af340982814c79<>res://.godot/imported/firebolt.png-efe12cc4d0cdd0881e58b0f8ea3164a6.ctex::
 fizzle.png::CompressedTexture2D::1292857245210560035::1787894741::1787896540::1::::<><><>0<>0<>b761e10c97aaf262f8af741fd2502a8a<>res://.godot/imported/fizzle.png-718a2591008793cdf2c4b939d8e655e2.ctex::
 icicle.png::CompressedTexture2D::2724654294280382709::1787894899::1787896540::1::::<><><>0<>0<>384d09d383c8b9cbb369e49633695d37<>res://.godot/imported/icicle.png-1f6075a0501c54f98347f5e7e92f940d.ctex::
