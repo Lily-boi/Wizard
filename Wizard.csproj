@@ -81,6 +81,10 @@
 
     <ItemGroup>
       <Content Include="Card_Ideas.txt" />
+      <Content Include="Mod File\Wizard\Wizard.dll" />
+      <Content Include="Mod File\Wizard\Wizard.json" />
+      <Content Include="Mod File\Wizard\Wizard.pck" />
+      <Content Include="Mod File\Wizard\Wizard.pdb" />
     </ItemGroup>
 
     <Target Name="CheckDependencyPaths">
