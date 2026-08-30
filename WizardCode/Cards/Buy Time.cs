@@ -13,8 +13,9 @@ namespace Wizard.WizardCode.Cards;
 
 public class Buy_Time() : WizardCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
+    public override bool GainsBlock => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-        new[] { HoverTipFactory.FromKeyword(WizardKeywords.Etch) };
+        new[] { HoverTipFactory.FromKeyword(WizardKeywords.Etch), HoverTipFactory.FromCard<Fizzle>() };
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
         new DynamicVar[] { new BlockVar(10M, ValueProp.Move) };

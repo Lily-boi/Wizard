@@ -1,4 +1,3 @@
-﻿using Godot;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -16,30 +15,39 @@ public class ApprenticesBook() : WizardRelic
 {
     public override RelicRarity Rarity => RelicRarity.Starter;
 
+    public override RelicModel GetUpgradeReplacement() =>
+        ModelDb.Relic<Archmage_s_Book>();
+
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new CardsVar(1)
     ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-        new[] { HoverTipFactory.FromKeyword(WizardKeywords.Etch) };
+    [
+        HoverTipFactory.FromKeyword(WizardKeywords.Etch)
+    ];
 
     public override async Task BeforeSideTurnStart(
-        PlayerChoiceContext choiceContext, CombatSide side,
-        IReadOnlyList<Creature> participants, ICombatState combatState)
+        PlayerChoiceContext choiceContext,
+        CombatSide side,
+        IReadOnlyList<Creature> participants,
+        ICombatState combatState)
     {
-        ApprenticesBook book = this;
-        if (participants.Contains(book._owner.Creature))
-            CastState.ResetForNewTurn(book._owner);
-
-        if (!participants.Contains(book._owner.Creature) ||
-            book._owner.PlayerCombatState.TurnNumber > 1)
+        if (!participants.Contains(Owner.Creature) ||
+            Owner.PlayerCombatState.TurnNumber > 1)
+        {
             return;
+        }
 
-        book.Flash();
+        Flash();
         var etched = await EtchCmd.EtchChosenFromHand(
-            choiceContext, book._owner, book, book.DynamicVars.Cards.IntValue);
+            choiceContext,
+            Owner,
+            this,
+            DynamicVars.Cards.IntValue);
+
         if (etched.Count > 0)
-            await CardPileCmd.Draw(choiceContext, 1M, book._owner);
+            await CardPileCmd.Draw(choiceContext, 1M, Owner);
     }
 }

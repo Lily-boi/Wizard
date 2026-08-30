@@ -19,7 +19,7 @@ public class Wild_Cast() : WizardCard(1, CardType.Attack, CardRarity.Common, Tar
         new[]
         {
             HoverTipFactory.FromKeyword(WizardKeywords.Etch),
-            HoverTipFactory.FromCard<Fizzle>(),
+            HoverTipFactory.FromCard<Fizzle>()
         };
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>

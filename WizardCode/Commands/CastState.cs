@@ -1,31 +1,65 @@
-﻿using System.Collections.Generic;
+﻿using System.Runtime.CompilerServices;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Models;
 
 namespace Wizard.WizardCode.Commands;
 
-// Turn-scoped bookkeeping for the Cast mechanic. Not derived from any decompiled
-// source — this is new infrastructure, since nothing in the base game needs to track
-// "how many times has this specific mechanic fired this turn" the way Combo/Momentum/
-// Scorch do. Reset every turn from MagesBook's existing BeforeSideTurnStart hook,
-// since that's guaranteed to run for every Wizard, every turn.
 public static class CastState
 {
-    private static readonly Dictionary<Player, int> _castsThisTurn = new();
-    private static readonly HashSet<Player> _castBlocked = new();
+    private sealed class PlayerTurnState
+    {
+        public object? CombatState { get; set; }
+        public int TurnNumber { get; set; } = -1;
+        public int CastsThisTurn { get; set; }
+        public bool IsCastingBlocked { get; set; }
+    }
+
+    private static readonly ConditionalWeakTable<Player, PlayerTurnState> States = new();
+    private static readonly HashSet<CardModel> CardsBeingCast = new();
+
+    private static PlayerTurnState GetCurrentState(Player player)
+    {
+        PlayerTurnState state = States.GetValue(
+            player,
+            static _ => new PlayerTurnState());
+        object? combatState = player.Creature.CombatState;
+        int turnNumber = player.PlayerCombatState?.TurnNumber ?? -1;
+
+        if (!ReferenceEquals(state.CombatState, combatState) ||
+            state.TurnNumber != turnNumber)
+        {
+            state.CombatState = combatState;
+            state.TurnNumber = turnNumber;
+            state.CastsThisTurn = 0;
+            state.IsCastingBlocked = false;
+        }
+
+        return state;
+    }
 
     public static int GetCastCount(Player player) =>
-        _castsThisTurn.TryGetValue(player, out var c) ? c : 0;
+        GetCurrentState(player).CastsThisTurn;
 
     public static void RecordCast(Player player) =>
-        _castsThisTurn[player] = GetCastCount(player) + 1;
+        GetCurrentState(player).CastsThisTurn++;
 
-    public static bool IsCastBlocked(Player player) => _castBlocked.Contains(player);
+    public static bool IsCastBlocked(Player player) =>
+        GetCurrentState(player).IsCastingBlocked;
 
-    public static void BlockCastingThisTurn(Player player) => _castBlocked.Add(player);
+    public static void BlockCastingThisTurn(Player player) =>
+        GetCurrentState(player).IsCastingBlocked = true;
 
     public static void ResetForNewTurn(Player player)
     {
-        _castsThisTurn[player] = 0;
-        _castBlocked.Remove(player);
+        PlayerTurnState state = GetCurrentState(player);
+        state.CastsThisTurn = 0;
+        state.IsCastingBlocked = false;
     }
+
+    public static bool IsBeingCast(CardModel card) => CardsBeingCast.Contains(card);
+
+    internal static void BeginCast(CardModel card) => CardsBeingCast.Add(card);
+
+    internal static void EndCast(CardModel card) => CardsBeingCast.Remove(card);
 }

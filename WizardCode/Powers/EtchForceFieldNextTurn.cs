@@ -9,7 +9,7 @@ namespace Wizard.WizardCode.Powers;
 
 
 
-public sealed class EtchForceFieldNextTurnPower : WizardPower
+ public sealed class EtchForceFieldNextTurnPower : WizardPower
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;

@@ -26,9 +26,16 @@ public class Mage_Armor() : WizardCard(2, CardType.Skill, CardRarity.Common, Tar
     {
         Mage_Armor card = this;
         await CreatureCmd.GainBlock(card.Owner.Creature, card.DynamicVars.Block, play);
-
-        await PowerCmd.Apply<EtchForceFieldNextTurnPower>(
-            choiceContext, card.Owner.Creature, 1M, card.Owner.Creature, card);
+        if (card.IsUpgraded)
+        {
+            await PowerCmd.Apply<EtchUForceFieldNextTurnPower>(
+                choiceContext, card.Owner.Creature, 1M, card.Owner.Creature, card);
+        }
+        else
+        {
+            await PowerCmd.Apply<EtchForceFieldNextTurnPower>(
+                choiceContext, card.Owner.Creature, 1M, card.Owner.Creature, card);
+        }
     }
 
     protected override void OnUpgrade() => this.DynamicVars.Block.UpgradeValueBy(2M);

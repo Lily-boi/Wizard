@@ -33,5 +33,5 @@ public class Archmages_Hat() : WizardCard(1, CardType.Power, CardRarity.Uncommon
         
     }
 
-    protected override void OnUpgrade() => this.DynamicVars["costReduce"].UpgradeValueBy(1)
+    protected override void OnUpgrade() => this.DynamicVars["costReduce"].UpgradeValueBy(1);
 }

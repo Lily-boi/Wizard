@@ -11,6 +11,7 @@ namespace Wizard.WizardCode.Cards;
 
 public class Fortify() : WizardCard(0, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
+    public override bool GainsBlock => true;
     protected override IEnumerable<DynamicVar> CanonicalVars =>
         new DynamicVar[] { new BlockVar(3M, ValueProp.Move) };
 

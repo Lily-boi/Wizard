@@ -44,8 +44,9 @@ public class Scorch() : WizardCard(3, CardType.Attack, CardRarity.Uncommon, Targ
     
     public override Task BeforeCardPlayed(CardPlay cardPlay)
     {
-        if (cardPlay.Card.Owner != Owner) return Task.CompletedTask;
-        if (cardPlay.Card is not WizardCard wc || !wc.WasCast) return Task.CompletedTask;
+        if (cardPlay.Card.Owner != Owner ||
+            cardPlay.Card is not WizardCard { WasCast: true })
+            return Task.CompletedTask;
         ReduceCostBy(1);
         return Task.CompletedTask;
     }

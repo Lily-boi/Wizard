@@ -32,6 +32,6 @@ public class Worldfire() : WizardCard(3, CardType.Attack, CardRarity.Rare, Targe
             .Execute(choiceContext);
         await EtchCmd.Etch(card);
     }
-    
-    protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(4M)
+
+    protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(4M);
 }

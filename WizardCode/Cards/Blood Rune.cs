@@ -15,6 +15,7 @@ namespace Wizard.WizardCode.Cards;
 
 public class Blood_Rune() : WizardCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.Self)
 {
+    public override bool GainsBlock => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         new[] { HoverTipFactory.FromKeyword(WizardKeywords.Etch) };
 

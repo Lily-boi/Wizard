@@ -296,8 +296,14 @@ RARE
       
       
  - Ancient
-    - From Memory   {0}
-       - Etch up to 2[3] cards from your Draw Pile.
+    - From Memory   {0} Skill
+       - Etch up to 2[3] cards from your Draw Pile. Exhaust.
        
-    - Time Warp     {3}
+    - Time Warp     {3} Power
        - [Innate]. Take an extra turn after this one.
+       
+       
+ - Common
+  - Deal 2 dmg whenever ytou cast a spell
+  
+ - 

@@ -1,0 +1,229 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1788047649
+Card_Ideas.txt::TextFile::-1::1788047649::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1783367485::0::1::::<><><>0<>0<><>::
+Wizard.json::JSON::-1::1783367583::0::1::::<><><>0<>0<><>::
+::res://bin/::1783402742
+::res://bin/ExportRelease/::1783402742
+::res://bin/ExportRelease/net9.0/::1783402742
+::res://bin/ExportRelease/net9.0/publish/::1788051002
+Wizard.deps.json::JSON::-1::1788049114::0::1::::<><><>0<>0<><>::
+::res://Wizard/::1783402745
+mod_image.png::CompressedTexture2D::7007238833105909473::1783367485::1783402745::1::::<><><>0<>0<>d63806b34c02cb4cdb20a4e42257c0b0<>res://.godot/imported/mod_image.png-2568a0af1f5f3e448f755e36e8d07ad4.ctex::
+::res://Wizard/images/::1783377281
+::res://Wizard/images/card_portraits/::1783402745
+card.png::CompressedTexture2D::3152328501068144497::1783367485::1783402745::1::::<><><>0<>0<>9cd5e7629e06358b10de46d890ed08a2<>res://.godot/imported/card.png-0b3af82afb3a205fa39698bdae85abbd.ctex::
+::res://Wizard/images/card_portraits/big/::1787954518
+acid_splash.png::CompressedTexture2D::6820697340443085855::1787893982::1787896540::1::::<><><>0<>0<>25afc541bfddbfa947eb8827b7689537<>res://.godot/imported/acid_splash.png-0a1d5010dc72addb8505e31944a9aaa7.ctex::
+book_strike.png::CompressedTexture2D::5047303555619801623::1787894315::1787896540::1::::<><><>0<>0<>7939e2c8cc48cf2a3225a6cec5fa3df8<>res://.godot/imported/book_strike.png-27ffc235d137284add4265380b54a0b5.ctex::
+card.png::CompressedTexture2D::8020651168915603370::1783367485::1783402745::1::::<><><>0<>0<>5c27c28b5de6b62f5e878006aa008688<>res://.godot/imported/card.png-0398a4b623982656c1455825118db2e3.ctex::
+chain_lightning.png::CompressedTexture2D::2943411678002483163::1787894436::1787896540::1::::<><><>0<>0<>ec8ca56fcd5ea20a4f30b00acd003e30<>res://.godot/imported/chain_lightning.png-6fb46828dc29c513a99e6786edbf2430.ctex::
+defend_wizard.png::CompressedTexture2D::6222231164820960117::1787894103::1787896540::1::::<><><>0<>0<>b9e6ad39221f1002363a0c803f4012c4<>res://.godot/imported/defend_wizard.png-48f26969d2729a93f34ca5bac47e7491.ctex::
+dual_cast.png::CompressedTexture2D::4000757739319033920::1787894531::1787896540::1::::<><><>0<>0<>88734cbb6cacf364c27f0cb15b1423f9<>res://.godot/imported/dual_cast.png-7b0abdffa1c1cae9f76d7e9c6c570fc1.ctex::
+engrave.png::CompressedTexture2D::6511148677411643658::1787895410::1787896540::1::::<><><>0<>0<>c365411f6aae287116b79b067621ed5b<>res://.godot/imported/engrave.png-222844d5f2703b33f6deb5d2ac19c127.ctex::
+firebolt.png::CompressedTexture2D::3539669453276472199::1787894713::1787954518::1::::<><><>0<>0<>1eed9000b393646136af340982814c79<>res://.godot/imported/firebolt.png-efe12cc4d0cdd0881e58b0f8ea3164a6.ctex::
+fizzle.png::CompressedTexture2D::1292857245210560035::1787894741::1787896540::1::::<><><>0<>0<>b761e10c97aaf262f8af741fd2502a8a<>res://.godot/imported/fizzle.png-718a2591008793cdf2c4b939d8e655e2.ctex::
+icicle.png::CompressedTexture2D::2724654294280382709::1787894899::1787896540::1::::<><><>0<>0<>384d09d383c8b9cbb369e49633695d37<>res://.godot/imported/icicle.png-1f6075a0501c54f98347f5e7e92f940d.ctex::
+maelstrom_pulse.png::CompressedTexture2D::830405192823443355::1787895842::1787896540::1::::<><><>0<>0<>16501061c3f8b21e6177ffc4dc7e9f87<>res://.godot/imported/maelstrom_pulse.png-0319681abc907e352f1587e2c828c106.ctex::
+magic_missile.png::CompressedTexture2D::9195324949642942840::1787895973::1787896540::1::::<><><>0<>0<>24d8e841d884a8a27edc2a8bcd2ad538<>res://.godot/imported/magic_missile.png-420bf62501e755c4b2a95f9b569986e2.ctex::
+mudslide.png::CompressedTexture2D::661790399707064401::1787896104::1787896540::1::::<><><>0<>0<>1f1857bfc24d34afba182a90864aebf5<>res://.godot/imported/mudslide.png-2e41698ef6dce77a1dce03dff5982ade.ctex::
+multitask.png::CompressedTexture2D::1572044720050734408::1787896210::1787896540::1::::<><><>0<>0<>6ba8c41325151fb054725196047e8765<>res://.godot/imported/multitask.png-157b79c63b5694c58e9ce08d6dece1b6.ctex::
+strike_wizard.png::CompressedTexture2D::4410354660863757647::1787893629::1787896540::1::::<><><>0<>0<>d35dc714213a9f07d9894df6028c13b3<>res://.godot/imported/strike_wizard.png-f6907c7c74eee3f6afc60f20946aa836.ctex::
+summon.png::CompressedTexture2D::7458154726056376971::1787896385::1787896540::1::::<><><>0<>0<>dc2eaf90adc9a1257b4d4368e82198fb<>res://.godot/imported/summon.png-5141e35050ae71151ace8b855a48dae0.ctex::
+wild_cast.png::CompressedTexture2D::3023182192676697348::1787896523::1787896540::1::::<><><>0<>0<>b28062db29127a5a66334dde5cfd69d0<>res://.godot/imported/wild_cast.png-cf5f775beb26f51950ab93e940c0f547.ctex::
+::res://Wizard/images/charui/::1783402745
+big_energy.png::CompressedTexture2D::1930373484152370700::1783367485::1783402745::1::::<><><>0<>0<>3d61084c4bdce32f5a29b705caf17ba8<>res://.godot/imported/big_energy.png-78d5cc27dc0a914c300b93e9fe917a84.ctex::
+character_icon_char_name.png::CompressedTexture2D::5259660632776469162::1783367485::1783402745::1::::<><><>0<>0<>ae94aef38864ef279e9fbade1c4caf59<>res://.godot/imported/character_icon_char_name.png-fc3c9184d439f8eb36016b3076b3a5e2.ctex::
+char_select_char_name.png::CompressedTexture2D::2660129381012654303::1783367485::1783402745::1::::<><><>0<>0<>3ce951e1e5182f2872bb9b8c7c352011<>res://.godot/imported/char_select_char_name.png-55b87cc60c049c34971578c142baf136.ctex::
+char_select_char_name_locked.png::CompressedTexture2D::671811834545282125::1783367485::1783402745::1::::<><><>0<>0<>1dbd740625397c89a55086c6a62309b1<>res://.godot/imported/char_select_char_name_locked.png-27609b1299d01481ec798f14ac4b35ee.ctex::
+map_marker_char_name.png::CompressedTexture2D::2294558486277622740::1783367485::1783402745::1::::<><><>0<>0<>63cf5dbdd3ded7e84dc71289851edd33<>res://.godot/imported/map_marker_char_name.png-68475266b58684f4491c80c061317a59.ctex::
+text_energy.png::CompressedTexture2D::1063688949762536531::1783367485::1783402745::1::::<><><>0<>0<>373aeba6fa25f7e66c95b9b64beddd22<>res://.godot/imported/text_energy.png-ec00a3354d6cd8e2743ebab8aa28240d.ctex::
+::res://Wizard/images/combat_ui/::1783403238
+::res://Wizard/images/powers/::1783402745
+power.png::CompressedTexture2D::937716093411779756::1783367485::1783402745::1::::<><><>0<>0<>5ad793a855901d31223849bc416d5702<>res://.godot/imported/power.png-131f85a2743c677237c4fcb91a70a375.ctex::
+::res://Wizard/images/powers/big/::1783402745
+power.png::CompressedTexture2D::6579446276483057749::1783367485::1783402745::1::::<><><>0<>0<>b1b5722968554e0c3070fd0462d769b4<>res://.godot/imported/power.png-52c238001d1fe617aeb1d4c6eea39d42.ctex::
+::res://Wizard/images/relics/::1787887653
+apprentices_book.png::CompressedTexture2D::2789360234825166592::1783377411::1787887653::1::::<><><>0<>0<>4cc88c694747aeb6561a38d1cb5e41a8<>res://.godot/imported/apprentices_book.png-959cccf317ddcfe3d91412399be9dddd.ctex::
+relic.png::CompressedTexture2D::7018048594542190851::1783367485::1783402745::1::::<><><>0<>0<>63166f5ab29176f6f815ad2f912446b5<>res://.godot/imported/relic.png-afa0a4bcb69a4839401e16e88d8acb0c.ctex::
+relic_outline.png::CompressedTexture2D::4939166086603500390::1783367485::1783402745::1::::<><><>0<>0<>444c7c77d1bc487d09eda455a7e611f9<>res://.godot/imported/relic_outline.png-73de555ad59d32e9ca7f57de4d60885e.ctex::
+::res://Wizard/images/relics/big/::1783402745
+relic.png::CompressedTexture2D::9047096310177014402::1783367485::1783402745::1::::<><><>0<>0<>57b2f0cbe1b0c7eac1b035e34bca45e9<>res://.godot/imported/relic.png-3a06beeb62a57125572f36f4f6a0d344.ctex::
+::res://Wizard/localization/::1783367485
+::res://Wizard/localization/eng/::1788050756
+ancients.json::JSON::-1::1783367804::0::1::::<><><>0<>0<><>::
+cards.json::JSON::-1::1788050756::0::1::::<><><>0<>0<><>::
+card_keywords.json::JSON::-1::1787954087::0::1::::<><><>0<>0<><>::
+card_selection.json::JSON::-1::1783458158::0::1::::<><><>0<>0<><>::
+characters.json::JSON::-1::1787883536::0::1::::<><><>0<>0<><>::
+powers.json::JSON::-1::1788050376::0::1::::<><><>0<>0<><>::
+relics.json::JSON::-1::1788047540::0::1::::<><><>0<>0<><>::
+static_hover_tips.json::JSON::-1::1783458533::0::1::::<><><>0<>0<><>::
+::res://Wizard/scenes/::1783403554
+SpellPile.tscn::PackedScene::-1::1783403554::0::1::::<><><>0<>0<><>::res://WizardCode/ui/NSpellPile1.cs<>res://Wizard/images/relics/mages_book.png<>res://WizardCode/ui/WizardMegaLabel.cs
+::res://WizardCode/::1783405766
+MainFile.cs::CSharpScript::3418481012520036357::1783402974::0::1::::<><><>0<>0<><>::
+::res://WizardCode/CardPiles/::1783461721
+SpellPile.cs::CSharpScript::7506098218409464348::1783461721::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Cards/::1788050743
+Acid Splash.cs::CSharpScript::5536264221673391659::1787888527::0::1::::<><><>0<>0<><>::
+Arcane Barrage.cs::CSharpScript::5449087921223437887::1787997015::0::1::::<><><>0<>0<><>::
+Archmages Hat.cs::CSharpScript::8373510286296363248::1788034542::0::1::::<><><>0<>0<><>::
+Archmages Possession.cs::CSharpScript::8787409151964159082::1788035700::0::1::::<><><>0<>0<><>::
+Blood Rune.cs::CSharpScript::3612595883399290908::1788041445::0::1::::<><><>0<>0<><>::
+Book Strike.cs::CSharpScript::4089814594736129022::1787871212::0::1::::<><><>0<>0<><>::
+Burning Grip.cs::CSharpScript::8154326526516558440::1787974850::0::1::::<><><>0<>0<><>::
+Buy Time.cs::CSharpScript::4726317406400599778::1788041445::0::1::::<><><>0<>0<><>::
+Chain Lightning.cs::CSharpScript::4883823007057500731::1787905072::0::1::::<><><>0<>0<><>::
+Cheat Sheet.cs::CSharpScript::1259343268036627240::1788049378::0::1::::<><><>0<>0<><>::
+Cleansing Wave.cs::CSharpScript::568105210188001835::1787977265::0::1::::<><><>0<>0<><>::
+Concentrate.cs::CSharpScript::1562402347554729836::1788041445::0::1::::<><><>0<>0<><>::
+Death.cs::CSharpScript::2166586817745618720::1787996424::0::1::::<><><>0<>0<><>::
+DefendWizard.cs::CSharpScript::7054966920823088801::1787897440::0::1::::<><><>0<>0<><>::
+Desperate Measures.cs::CSharpScript::3010536397199645751::1787976991::0::1::::<><><>0<>0<><>::
+Divide.cs::CSharpScript::3876371714368853225::1787954427::0::1::::<><><>0<>0<><>::
+Divination.cs::CSharpScript::8549013187471913830::1787977756::0::1::::<><><>0<>0<><>::
+Dual Cast.cs::CSharpScript::6689467395110540694::1787888527::0::1::::<><><>0<>0<><>::
+Duplicate.cs::CSharpScript::4103569832455279389::1787996789::0::1::::<><><>0<>0<><>::
+Earthen Wall.cs::CSharpScript::9124521285157520819::1787978729::0::1::::<><><>0<>0<><>::
+Earthquake.cs::CSharpScript::6602932046263152409::1787996297::0::1::::<><><>0<>0<><>::
+Ebb and Flow.cs::CSharpScript::8956293338544196330::1788041935::0::1::::<><><>0<>0<><>::
+Efficient Casting.cs::CSharpScript::1815351201899114644::1787994333::0::1::::<><><>0<>0<><>::
+Engrave.cs::CSharpScript::2869296082480387445::1787895172::0::1::::<><><>0<>0<><>::
+Eternal Loop.cs::CSharpScript::4254936659355791609::1788049378::0::1::::<><><>0<>0<><>::
+Explosion.cs::CSharpScript::1311184458092076437::1787996252::0::1::::<><><>0<>0<><>::
+Faerie Light.cs::CSharpScript::1525825816198143011::1787953843::0::1::::<><><>0<>0<><>::
+Fault Shift.cs::CSharpScript::5153448600247362443::1788036854::0::1::::<><><>0<>0<><>::
+Filter.cs::CSharpScript::4187064530906861624::1787994617::0::1::::<><><>0<>0<><>::
+Fire Body.cs::CSharpScript::410850539807647480::1788049378::0::1::::<><><>0<>0<><>::
+Fireball.cs::CSharpScript::2749427780515635819::1787955963::0::1::::<><><>0<>0<><>::
+Firebolt.cs::CSharpScript::1324032785455669164::1787953818::0::1::::<><><>0<>0<><>::
+Firework.cs::CSharpScript::2326829320612959063::1787997039::0::1::::<><><>0<>0<><>::
+Fizzle.cs::CSharpScript::8862311122336310171::1788050687::0::1::::<><><>0<>0<><>::
+Flurry.cs::CSharpScript::6742208590188127586::1787974723::0::1::::<><><>0<>0<><>::
+Font of Knowledge.cs::CSharpScript::9081537029400618627::1787997238::0::1::::<><><>0<>0<><>::
+Forbidden Rites.cs::CSharpScript::5983389070325648644::1788039361::0::1::::<><><>0<>0<><>::
+Force Field.cs::CSharpScript::1825111226876625618::1788050687::0::1::::<><><>0<>0<><>::
+Foresight.cs::CSharpScript::3499308334159038721::1787977036::0::1::::<><><>0<>0<><>::
+Fortify.cs::CSharpScript::1799083033879793612::1788041505::0::1::::<><><>0<>0<><>::
+FromMemory.cs::CSharpScript::1332580417565683213::1788050276::0::1::::<><><>0<>0<><>::
+Gust.cs::CSharpScript::7938439181032741624::1787953164::0::1::::<><><>0<>0<><>::
+Ice Wall.cs::CSharpScript::7881357545067844157::1788039709::0::1::::<><><>0<>0<><>::
+Icicle.cs::CSharpScript::3630075873009510168::1787888527::0::1::::<><><>0<>0<><>::
+Immovable.cs::CSharpScript::3785406552445089851::1788049377::0::1::::<><><>0<>0<><>::
+Innovation.cs::CSharpScript::4736047838894604567::1788041505::0::1::::<><><>0<>0<><>::
+Invoke Chain Lightning.cs::CSharpScript::8187174853515672980::1788049377::0::1::::<><><>0<>0<><>::
+Invoke Firebolt.cs::CSharpScript::9022566124770816183::1787997819::0::1::::<><><>0<>0<><>::
+Invoke Icicle.cs::CSharpScript::7948583934615651517::1788049378::0::1::::<><><>0<>0<><>::
+Invoke Magic Missile.cs::CSharpScript::5711749194802781720::1787995901::0::1::::<><><>0<>0<><>::
+Life Tap.cs::CSharpScript::2232413168723743388::1787996402::0::1::::<><><>0<>0<><>::
+Lightning Strike.cs::CSharpScript::647080424063104698::1787996368::0::1::::<><><>0<>0<><>::
+Living Grimoire.cs::CSharpScript::1694495180439846538::1788049378::0::1::::<><><>0<>0<><>::
+Maelstrom Pulse.cs::CSharpScript::4253690948200441165::1787896914::0::1::::<><><>0<>0<><>::
+Mage Armor.cs::CSharpScript::7931746599831862527::1788040440::0::1::::<><><>0<>0<><>::
+Magic Missile.cs::CSharpScript::7888362668136526883::1787995312::0::1::::<><><>0<>0<><>::
+Magical Residue.cs::CSharpScript::5203729584713342230::1788049378::0::1::::<><><>0<>0<><>::
+Mana Burst.cs::CSharpScript::5490377631875971863::1787974882::0::1::::<><><>0<>0<><>::
+Mana Reflux.cs::CSharpScript::3943291199387784580::1788042640::0::1::::<><><>0<>0<><>::
+Markers.cs::CSharpScript::1584367504975334806::1787869910::0::1::::<><><>0<>0<><>::
+Mass Chant.cs::CSharpScript::6419675125430074479::1787953876::0::1::::<><><>0<>0<><>::
+Momentum.cs::CSharpScript::1990756732251946249::1787975020::0::1::::<><><>0<>0<><>::
+Mudslide.cs::CSharpScript::5114778789194306106::1787888527::0::1::::<><><>0<>0<><>::
+Multitask.cs::CSharpScript::7262300196131616071::1787888527::0::1::::<><><>0<>0<><>::
+Overload.cs::CSharpScript::5293140856561224359::1787977007::0::1::::<><><>0<>0<><>::
+Petrify.cs::CSharpScript::888704131932041654::1787977058::0::1::::<><><>0<>0<><>::
+Phoenix's Blessing.cs::CSharpScript::1180015248290816590::1788039755::0::1::::<><><>0<>0<><>::
+Preperation.cs::CSharpScript::560940522534094628::1787994573::0::1::::<><><>0<>0<><>::
+Pyroclasm.cs::CSharpScript::4350041673098620549::1787974834::0::1::::<><><>0<>0<><>::
+Reuse.cs::CSharpScript::6444445432285944558::1787955446::0::1::::<><><>0<>0<><>::
+Ripple.cs::CSharpScript::3446584215391606103::1787977743::0::1::::<><><>0<>0<><>::
+Riptide.cs::CSharpScript::6770177295077909476::1787974808::0::1::::<><><>0<>0<><>::
+Sanctuary.cs::CSharpScript::7889647740150195074::1788039822::0::1::::<><><>0<>0<><>::
+Scorch.cs::CSharpScript::4820890001303438095::1788045654::0::1::::<><><>0<>0<><>::
+Set Up.cs::CSharpScript::5643235669220675527::1787977769::0::1::::<><><>0<>0<><>::
+Sinkhole.cs::CSharpScript::6645923038787919097::1787996273::0::1::::<><><>0<>0<><>::
+Spare Page.cs::CSharpScript::1640040326275568445::1787977016::0::1::::<><><>0<>0<><>::
+Spark Missile.cs::CSharpScript::4239121138473231908::1787993690::0::1::::<><><>0<>0<><>::
+Spell Spray.cs::CSharpScript::4447843863074185911::1787975054::0::1::::<><><>0<>0<><>::
+Spell Weave.cs::CSharpScript::4646359005367363567::1788039975::0::1::::<><><>0<>0<><>::
+Stone Walls.cs::CSharpScript::1528017878677001537::1788040061::0::1::::<><><>0<>0<><>::
+StrikeWizard.cs::CSharpScript::7721560059112476165::1787883807::0::1::::<><><>0<>0<><>::
+Study Ahead.cs::CSharpScript::4636159833915343346::1787953889::0::1::::<><><>0<>0<><>::
+Summon.cs::CSharpScript::7134964492009583764::1788050315::0::1::::<><><>0<>0<><>::
+Tidal Wave.cs::CSharpScript::872665213053101803::1788042042::0::1::::<><><>0<>0<><>::
+Tidewater.cs::CSharpScript::4387739567422828032::1788043304::0::1::::<><><>0<>0<><>::
+Time Warp.cs::CSharpScript::3168678134259263194::1788050542::0::1::::<><><>0<>0<><>::
+Tremor.cs::CSharpScript::2098438024493098326::1788041505::0::1::::<><><>0<>0<><>::
+Tsunami.cs::CSharpScript::4486288156461284144::1787996387::0::1::::<><><>0<>0<><>::
+Undertow.cs::CSharpScript::4577451434262334406::1787953908::0::1::::<><><>0<>0<><>::
+Whirlpool.cs::CSharpScript::85015687974906786::1788040206::0::1::::<><><>0<>0<><>::
+Wild Cast.cs::CSharpScript::5404985578014575590::1788037845::0::1::::<><><>0<>0<><>::
+Withering Curse.cs::CSharpScript::660788323369419387::1787977297::0::1::::<><><>0<>0<><>::
+Wizard's Gambit.cs::CSharpScript::6068258421721993890::1788042507::0::1::::<><><>0<>0<><>::
+WizardCard.cs::CSharpScript::4741250575990118321::1787886158::0::1::::<><><>0<>0<><>::
+Worldfire.cs::CSharpScript::8600127999919375510::1788035222::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Character/::1787895269
+Wizard.cs::CSharpScript::588233605793188465::1787895269::0::1::::<><><>0<>0<><>::
+WizardCardPool.cs::CSharpScript::7426006052048139791::1783367497::0::1::::<><><>0<>0<><>::
+WizardPotionPool.cs::CSharpScript::6301794753164111631::1783367497::0::1::::<><><>0<>0<><>::
+WizardRelicPool.cs::CSharpScript::5486528653479355772::1783367485::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Commands/::1788050561
+CastCmd.cs::CSharpScript::9028542489308500950::1788046884::0::1::::<><><>0<>0<><>::
+CastState.cs::CSharpScript::3766894319700898440::1788046758::0::1::::<><><>0<>0<><>::
+EtchCmd.cs::CSharpScript::3911046273417507987::1788049492::0::1::::<><><>0<>0<><>::
+WizardPowerHooks.cs::CSharpScript::2171218340210807694::1788049377::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Config/::1783378226
+WizardConfig.cs::CSharpScript::8552933011841953807::1783377797::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Extensions/::1783374260
+StringExtensions.cs::CSharpScript::3141115210229313702::1783367497::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Keywords/::1787869599
+WizardKeywords.cs::CSharpScript::476656675752801239::1787869599::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Patches/::1783405836
+::res://WizardCode/Patches/CombatPiles/::1783406271
+NCombatPilesContainerPatch.cs::CSharpScript::1358258014390486093::1783405873::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Potions/::1783374260
+WizardPotion.cs::CSharpScript::4541318763944042034::1783367485::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Powers/::1788050561
+ArchmagesHatPower.cs::CSharpScript::457763224283059362::1787997674::0::1::::<><><>0<>0<><>::
+CheatSheetPower.cs::CSharpScript::7232189290097052760::1788049377::0::1::::<><><>0<>0<><>::
+DuplicateCastPower.cs::CSharpScript::4357086886167337293::1787996753::0::1::::<><><>0<>0<><>::
+EfficientCastingPower.cs::CSharpScript::9050103124783464186::1787996753::0::1::::<><><>0<>0<><>::
+EtchForceFieldNextTurn.cs::CSharpScript::6397991424256052222::1788034977::0::1::::<><><>0<>0<><>::
+EtchUForceFieldNextTurn.cs::CSharpScript::219147951997441816::1788049377::0::1::::<><><>0<>0<><>::
+EternalLoopPower.cs::CSharpScript::4192946973238644192::1788049377::0::1::::<><><>0<>0<><>::
+FilterPower.cs::CSharpScript::1064739085628262266::1788049377::0::1::::<><><>0<>0<><>::
+FireBodyPower.cs::CSharpScript::1191614562195593645::1788049657::0::1::::<><><>0<>0<><>::
+FontOfKnowledgePower.cs::CSharpScript::8596472322262716568::1787996753::0::1::::<><><>0<>0<><>::
+Fortify.cs::CSharpScript::1660524928353893666::1787996753::0::1::::<><><>0<>0<><>::
+ImmovablePower.cs::CSharpScript::3233420553336888499::1788049377::0::1::::<><><>0<>0<><>::
+InvokeChainLightningPower.cs::CSharpScript::2462747409986414945::1788049377::0::1::::<><><>0<>0<><>::
+InvokeFireboltPower.cs::CSharpScript::499762309640905158::1788049377::0::1::::<><><>0<>0<><>::
+InvokeIciclePower.cs::CSharpScript::18592639025135798::1788049377::0::1::::<><><>0<>0<><>::
+InvokeMagicMissilePower.cs::CSharpScript::715195092548966882::1788049377::0::1::::<><><>0<>0<><>::
+InvokeUChainLightningPower.cs::CSharpScript::1008432221841498115::1788049377::0::1::::<><><>0<>0<><>::
+InvokeUFireboltPower.cs::CSharpScript::9022320637763241985::1788049377::0::1::::<><><>0<>0<><>::
+InvokeUIciclePower.cs::CSharpScript::7630457373872820079::1788049377::0::1::::<><><>0<>0<><>::
+InvokeUMagicMissilePower.cs::CSharpScript::4384581961465779384::1788049377::0::1::::<><><>0<>0<><>::
+LivingGrimoirePower.cs::CSharpScript::4354400629445383196::1788049377::0::1::::<><><>0<>0<><>::
+MagicalResiduePower.cs::CSharpScript::1869430660227184490::1788049377::0::1::::<><><>0<>0<><>::
+ManaRefluxPower.cs::CSharpScript::4455922734388941239::1787996753::0::1::::<><><>0<>0<><>::
+PreperationPowerr.cs::CSharpScript::1910094377988576953::1787996753::0::1::::<><><>0<>0<><>::
+TimeWarpPower.cs::CSharpScript::1053784085602037728::1788050276::0::1::::<><><>0<>0<><>::
+UArchmagesHatPower.cs::CSharpScript::6978755631843117471::1788035045::0::1::::<><><>0<>0<><>::
+UFontOfKnowledgePower.cs::CSharpScript::3315749924658266375::1787996753::0::1::::<><><>0<>0<><>::
+WizardPower.cs::CSharpScript::1291902934848764531::1783367497::0::1::::<><><>0<>0<><>::
+::res://WizardCode/Relics/::1788050435
+ApprenticesBook.cs::CSharpScript::470707497716566470::1788050435::0::1::::<><><>0<>0<><>::
+ArchmagesBookmark.cs::CSharpScript::7792615674572472008::1788047027::0::1::::<><><>0<>0<><>::
+ArchmagesMetronome.cs::CSharpScript::7076747043619915045::1788047027::0::1::::<><><>0<>0<><>::
+ArchmagesMonocle.cs::CSharpScript::5040885891787426234::1788047073::0::1::::<><><>0<>0<><>::
+ArchmagesRibbon.cs::CSharpScript::1628275039174782616::1788047073::0::1::::<><><>0<>0<><>::
+Archmage_s_Book.cs::CSharpScript::540794516726469225::1788047027::0::1::::<><><>0<>0<><>::
+CarbonPaper.cs::CSharpScript::6003879643868038915::1788047073::0::1::::<><><>0<>0<><>::
+Wand.cs::CSharpScript::6474297964103835101::1788047073::0::1::::<><><>0<>0<><>::
+WastepaperFamiliar.cs::CSharpScript::3635927348012025850::1788047073::0::1::::<><><>0<>0<><>::
+WizardRelic.cs::CSharpScript::3343858460535338995::1788046931::0::1::::<><><>0<>0<><>::
+WizardRelicHooks.cs::CSharpScript::6740110788531810299::1788049377::0::1::::<><><>0<>0<><>::
+::res://WizardCode/ui/::1783459766
+NSpellPile1.cs::CSharpScript::9186888850448330544::1783459766::0::1::::<><><>0<>0<><>::
+WizardMegaLabel.cs::CSharpScript::4400625797121081277::1783377575::0::1::::<><><>0<>0<><>::

@@ -28,4 +28,3 @@ public sealed class UArchmagesHatPower : WizardPower
         }
     }
 }
-}

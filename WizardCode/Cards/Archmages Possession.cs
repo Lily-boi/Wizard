@@ -1,9 +1,10 @@
-﻿using MegaCrit.Sts2.Core.Entities.Cards;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
-using Wizard.WizardCode.Cards;
+using Wizard.WizardCode.CardPiles;
 using Wizard.WizardCode.Commands;
 using Wizard.WizardCode.Keywords;
 
@@ -15,19 +16,17 @@ public class Archmages_Possession() : WizardCard(3, CardType.Attack, CardRarity.
         new[] { HoverTipFactory.FromKeyword(WizardKeywords.Cast) };
 
     public override IEnumerable<CardKeyword> CanonicalKeywords =>
-        new[] { CardKeyword.Retain, CardKeyword.Exhaust };
+        new[] {CardKeyword.Exhaust };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         Archmages_Possession card = this;
-        const int safetyCap = 50; // guards against a genuine infinite loop (e.g. Chain Lightning re-etching itself); raise/remove if undesired
-        for (int i = 0; i < safetyCap; i++)
+        var toCast = SpellCardPile.SpellPileType.GetPile(card.Owner).Cards.ToList();
+        foreach (var spellCard in toCast)
         {
-            var cast = await CastCmd.CastTopOfSpellPile(choiceContext, card.Owner);
-            if (cast == null) break;
+            await CastCmd.CastFromSpellPile(choiceContext, spellCard);
         }
     }
+    
+    protected override void OnUpgrade() => this.AddKeyword(CardKeyword.Retain);
 }
-
-
-//MAKE A LIST OF CARDS IN SPELL PILE AND THEN ITERATE + CAST

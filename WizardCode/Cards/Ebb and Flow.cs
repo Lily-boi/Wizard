@@ -10,7 +10,11 @@ namespace Wizard.WizardCode.Cards;
 public class Ebb_and_Flow() : WizardCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
-        new DynamicVar[] { new CardsVar(2), new EnergyVar(2) };
+        new DynamicVar[]
+        {
+            new CardsVar(2), 
+            new EnergyVar(2)
+        };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

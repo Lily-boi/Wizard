@@ -11,8 +11,9 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Wizard.WizardCode.Cards;
 
-public class Tremor() : WizardCard(2, CardType.Attack, CardRarity.Uncommon, TargetType.AllEnemies)
+public class Tremor() : WizardCard(2, CardType.Skill, CardRarity.Uncommon, TargetType.AllEnemies)
 {
+    public override bool GainsBlock => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         new[] { HoverTipFactory.FromPower<WeakPower>() };
 

@@ -12,7 +12,8 @@ using Wizard.WizardCode.Keywords;
 namespace Wizard.WizardCode.Cards;
 
 public class Concentrate() : WizardCard(2, CardType.Skill, CardRarity.Common, TargetType.Self)
-{
+{    
+    public override bool GainsBlock => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         new[] { HoverTipFactory.FromKeyword(WizardKeywords.Etch), HoverTipFactory.FromKeyword(WizardKeywords.Cast) };
 

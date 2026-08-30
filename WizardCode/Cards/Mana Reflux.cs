@@ -16,14 +16,14 @@ public class Mana_Reflux() : WizardCard(2, CardType.Power, CardRarity.Uncommon, 
         new DynamicVar[]
         {
             new EnergyVar(2),
-            new PowerVar<ManaRefluxPower>(1M)
+            new EnergyVar("mana", 1)
         };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         Mana_Reflux card = this;
         await CreatureCmd.TriggerAnim(card.Owner.Creature, "PowerUp", card.Owner.Character.PowerUpAnimDelay);
-        await PowerCmd.Apply<ManaRefluxPower>(choiceContext, card.Owner.Creature, card.DynamicVars["ManaRefluxPower"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<ManaRefluxPower>(choiceContext, card.Owner.Creature, card.DynamicVars["mana"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);

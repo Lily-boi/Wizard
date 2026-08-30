@@ -13,14 +13,19 @@ namespace Wizard.WizardCode.Cards;
 public class Tidewater() : WizardCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
-        new DynamicVar[] { new EnergyVar(2), new CardsVar(1), new IntVar("castEnergy", 1)};
+        new DynamicVar[]
+        {
+            new CardsVar(1), 
+            new EnergyVar(2), 
+            new EnergyVar("cast", 1)
+        };
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         Tidewater card = this;
         if (card.WasCast)
         {
-            await PlayerCmd.GainEnergy(card.DynamicVars["castEnergy"].BaseValue, card.Owner);
+            await PlayerCmd.GainEnergy(card.DynamicVars["cast"].BaseValue, card.Owner);
             await CardPileCmd.Draw(choiceContext, card.DynamicVars.Cards.BaseValue, card.Owner);
         }
         else
